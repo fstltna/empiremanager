@@ -9,13 +9,15 @@ use File::Fetch;
 
 my $EmpireCommand = "/home/empire/empiremanager/bin/empire -r -s empiredirectory.net:6665";
 my $BannerText = "logo.txt";
+my $LESSCMD = "/usr/bin/less";
+my $WhatIsFile = "whatisempire.txt";
 
 ###################################################
 # No changes below here
 ###################################################
 
 
-my $EMP_ver = "4.4.2";
+my $EMP_ver = "1.0.0";
 my $url = 'http://empiredirectory.net/empusers.txt';
 
 # Get file of active users
@@ -45,6 +47,7 @@ sub MainMenu
 	$menuselection = $d->menu( title => "Empire Menu", text => "Select one:",
                             list => [ '1', 'Play Empire',
                                       '2', 'List Sanctuaries',
+                                      '3', 'What is Empire',
                                       'q', 'Quit Empire' ] );
 }
 
@@ -83,6 +86,12 @@ while (-1)
 		}
 		print "--[ Press Enter To Continue ]--";
 		my $usrword = <STDIN>;
+	}
+	elsif ($menuselection eq "3")
+	{
+		my $clear_screen = cls();
+		print $clear_screen;
+		system("$LESSCMD $WhatIsFile");
 	}
 }
 
