@@ -11,6 +11,7 @@ my $EmpireCommand = "/home/empire/empiremanager/bin/empire -r -s empiredirectory
 my $BannerText = "logo.txt";
 my $LESSCMD = "/usr/bin/less";
 my $WhatIsFile = "whatisempire.txt";
+my $EmpireLinks = "empirelinks.txt";
 
 ###################################################
 # No changes below here
@@ -48,6 +49,7 @@ sub MainMenu
                             list => [ '1', 'Play Empire',
                                       '2', 'List Sanctuaries',
                                       '3', 'What is Empire',
+                                      '4', 'Empire Links',
                                       'q', 'Quit Empire' ] );
 }
 
@@ -92,6 +94,12 @@ while (-1)
 		my $clear_screen = cls();
 		print $clear_screen;
 		system("$LESSCMD $WhatIsFile");
+	}
+	elsif ($menuselection eq "4")
+	{
+		my $clear_screen = cls();
+		print $clear_screen;
+		system("$LESSCMD $EmpireLinks");
 	}
 }
 
