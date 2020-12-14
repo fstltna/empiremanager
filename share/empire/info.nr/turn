@@ -1,0 +1,23 @@
+                                Command : TURN
+
+NAME
+   turn - Turn game on or off, or change the login message
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : turn <on|off|motd>
+
+"turn  off"  turns  the  game  off:  mortal  players can't log in, and mortals
+already logged will be booted at the next command prompt.   The  command  lets
+you  enter  a message to the players explaining the downtime.  Updates are not
+disabled.
+
+"turn on" reverts the effect of "turn off".
+
+"turn motd" lets you enter a new login message, also known  as  motto  of  the
+day.
+
+SEE ALSO
+   Deity
+

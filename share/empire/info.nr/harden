@@ -1,0 +1,24 @@
+                               Command : HARDEN
+
+NAME
+   harden - Place missiles into protective silos
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : harden <PLANES> <LEVEL>
+
+The  "harden"  command is used to install missiles into protective silos which
+can prevent their destruction during a nuclear or  non-nuclear  attack.   Each
+successive "harden" command will add to the current hardness level of the mis-
+sile in question.
+
+Each point of hardening uses one unit of  heavy  construction  materials,  and
+costs $5.
+
+Once  a missile has been placed in a silo (hardened to a level greater than 0)
+it can no longer be moved.
+
+SEE ALSO
+   launch, Nuke-types, Plane-types, Planes, Nukes
+

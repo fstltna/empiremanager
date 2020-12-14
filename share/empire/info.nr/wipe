@@ -1,0 +1,47 @@
+                                Command : WIPE
+
+NAME
+   wipe - Remove all distribution thresholds
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : wipe <SECTS>
+
+The  wipe  command removes all distribution thresholds from the specified sec-
+tors.  Note that this will have drastic effects on sectors that rely  on  dis-
+tribution  in any way, so use with caution.  Also note that if you make a mis-
+take, it can cost lots of BTUs to reverse the effects of a wipe.
+
+   [##:##] Command : level #5
+
+   Wed Aug 16 18:34:43 1995
+   DISTRIBUTION LEVELS
+     sect      dst    civ mil  uw food  sh gun pet iron dust bar oil lcm hcm rad
+    -5,5   k  -1,5      0   0   0    0   0   0   0  566    1   0   0   0   1   0
+    -3,5   f  -1,5      0   0   0    0 100  10   0    0    0   0   0 100 250   0
+    -1,5   w  -1,5      0   0   0    0   0   0   0    0    0   0   0   0   0   0
+    -6,6   !  -1,5      0   0   0    0 200  50 200    0    0   0   1 200 200   0
+       4 sectors
+
+   [##:##] Command : wipe #5
+
+   distribution thresholds wiped from -5,5
+   distribution thresholds wiped from -3,5
+   distribution thresholds wiped from -1,5
+   distribution thresholds wiped from -6,6
+
+   [##:##] Command : level #5
+
+   Wed Aug 16 18:34:43 1995
+   DISTRIBUTION LEVELS
+     sect      dst    civ mil  uw food  sh gun pet iron dust bar oil lcm hcm rad
+    -5,5   k  -1,5      0   0   0    0   0   0   0    0    0   0   0   0   0   0
+    -3,5   f  -1,5      0   0   0    0   0   0   0    0    0   0   0   0   0   0
+    -1,5   w  -1,5      0   0   0    0   0   0   0    0    0   0   0   0   0   0
+    -6,6   !  -1,5      0   0   0    0   0   0   0    0    0   0   0   0   0   0
+       4 sectors
+
+SEE ALSO
+   distribute, census, commodity, level, threshold, Distribution
+

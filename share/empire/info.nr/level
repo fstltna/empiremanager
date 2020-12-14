@@ -1,0 +1,60 @@
+                               Command : LEVEL
+
+NAME
+   level - List distribution thresholds
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : level <SECTS>
+
+The  level  report provides information about the various distribution thresh-
+olds in some or all of the sectors that you occupy.
+
+In the syntax of the level command <SECTS> is  the  area  on  which  you  wish
+information, (see "info syntax").  A typical usage might be:
+   [##:##] Command : level -6:6,-3:3
+which  would list data for the area extending three sectors out from the capi-
+tal in each direction.
+
+The level report lists each of your sectors with the following heading:
+
+   DISTRIBUTION LEVELS
+    sect    dst   civ mil uw food  sh gun pet iron dust bar oil lcm hcm rad
+
+These columns represent:
+
+      sect  the x and y coordinates of the sector
+path------  the route that goods travel to and from the distribution sector
+       dst  the distribution destination for the sector
+       civ  the distribution threshold for civilians in that sector
+       mil  the distribution threshold for military in that sector
+        uw  the distribution threshold for uncompensated workers in that  sec-
+            tor
+      food  the distribution threshold for food in that sector
+       gun  the distribution threshold for guns in that sector
+        sh  the distribution threshold for shells in that sector
+       pet  the distribution threshold for petroleum in that sector
+      iron  the distribution threshold for iron ore in that sector
+      dust  the distribution threshold for gold dust in that sector
+       bar  the distribution threshold for gold bars in that sector
+       oil  the distribution threshold for oil in that sector
+       lcm  the  distribution  threshold  for  light construction materials in
+            that sector
+       hcm  the distribution threshold for  heavy  construction  materials  in
+            that sector
+       rad  the  distribution threshold for radioactive materials in that sec-
+            tor
+
+For example:
+   [##:##] Command : level -2,2
+
+   Fri Oct 31 16:58:34 1986
+   DISTRIBUTION LEVELS
+    sect    dst   civ mil  uw food  sh gun pet iron dust bar oil lcm hcm rad
+   -2,-2 + -2,-2    0   0 201    0   0   0   0    0    0   0   0   0   0   0
+      1 sector
+
+SEE ALSO
+   distribute, threshold, commodity, census, Distribution
+

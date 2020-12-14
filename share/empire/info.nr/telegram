@@ -1,0 +1,50 @@
+                              Command : TELEGRAM
+
+NAME
+   telegram - Send "diplomatic" communique to another country
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : telegram <CNUM/CNAME>...
+
+The  telegram  command  allows communication to take place between representa-
+tives.  Currently you are given only 1024 characters per telegram.
+
+The <CNUM/CNAME> argument is either  the  number  or  name  of  the  recipient
+nation.  You  may  specify as many recipients on the command line as you wish.
+Telegrams sent to country #0 appear as prayers, (favors are best  obtained  in
+this manner.)
+
+While entering your telegram the system tells you how many characters you have
+left.  You end the telegram by entering a line  with  a  '.'   on  a  line  by
+itself. A line containing only '~q' will abort the telegram.
+
+For example:
+   [##:##] Command : tel 7 8
+
+   Enter telegram for multiple recipients
+   undo last line with ~u, print with ~p, abort with ~q, end with .
+    1024 left:
+    1023 left: B.F.D. Pouncetrifle
+    1003 left: Groonland Embassy
+     984 left:
+     983 left: Dear Ambassador Pouncetrifle,
+     953 left:
+     952 left: Just a little note to express the friendly wishes that all of us
+     887 left: in Curmudgeon feel toward you backward savages in Groonland.  As
+     822 left: to the matter of the treaty you've proposed please remember that
+     757 left: if we wished we could TRASH your capital.
+     715 left:
+     714 left:                         As always I remain,
+     688 left:                         Your humble and obedient servant, etc, etc
+     638 left:                         E. D. Amen Dada
+     616 left:                         Under Asst. West Coast Promo.
+     580 left:                         the Sovereign State of Curmudgeon
+     540 left: .
+
+Note that others can reject your telegrams, using "reject".
+
+SEE ALSO
+   flash, toggle, announce, read, reject, Communication, Diplomacy
+

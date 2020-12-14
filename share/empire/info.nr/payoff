@@ -1,0 +1,38 @@
+                               Command : PAYOFF
+
+NAME
+   payoff - Find out the current payoff of a trade ship
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : payoff [<SHIP/FLEET> | <SECTS>]
+
+The  payoff  command  gives a census of your trade ships, and lists the payoff
+they would give if scuttled at the current sector.  Payoff can only be  calcu-
+lated  for  trade  ships you built yourself, not for ships you `acquired' from
+somebody else.
+
+The <SHIP/FLEET> and <SECTS> arguments are provided in case you only  wish  to
+look at one ship or one fleet or all ships within a given area.
+
+Payoff  expects  an  argument.   To  see every trade ship you own, give it the
+argument '*', or type "ship *".
+
+The report format contains the following fields:
+
+    shp#  the ship number
+shiptype  the type of ship; "patrol boat", "submarine", etc,
+     x,y  the ship's current location (relative to your capital),
+      $$  the money you would get if you scuttled this ship
+
+For example:
+   [##:##] Command : payoff *
+
+   shp#     ship type  orig x,y       x,y    dist $$
+      5 ts2 trade ship 2    2,2      21,-13    17 $5050.00
+   1 ship
+
+SEE ALSO
+   Trade-ships, sonar, torpedo, upgrade, Ships
+

@@ -1,0 +1,106 @@
+                               Command : XDUMP
+
+NAME
+   xdump - Extended dump of everything under the sun
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : xdump <TYPE|NUMBER> <RECORDS>
+
+SYNTAX
+   [##:##] Command : xdump meta <TYPE|NUMBER>
+
+The  xdump  command  displays  information  on game configuration and state in
+machine readable format.  It is intended for use by clients and  tools.   This
+info page gives an overview; see doc/xdump in the source distribution for com-
+plete documentation.
+
+Game configuration and state consists of a number of tables or  files.   xdump
+shows  only  things  that  are certainly visible to you: sectors you own, ship
+types known, etc.
+
+The output of xdump is a table consisting of a header line, the table body and
+a footer line.
+
+The  header line is of the form "XDUMP <TYPE> <TIMESTAMP>".  <TYPE> identifies
+the dump.  The timestamp permits incremental dumps (see below).
+
+The body consists of records; one record  per  line.   A  record  consists  of
+fields  separated  by  a  space.   All records have the same number of fields.
+Fields match records in the table's meta-table (see below).
+
+A field is either in integer, floating-point number or string format.   In  no
+case does it contain space or newline.  All fields in the same column have the
+same format.
+
+Integer fields are in decimal; they can be parsed by scanf %d.  Conversely, if
+that succeeds and consumes the complete field, it's an integer field.
+
+Floating-point fields can be parsed by scanf %g (or equivalents %e, %f).  Con-
+versely, if that succeeds, it's a floating-point field.
+
+String fields are in C syntax.  Funny characters including space, newline  and
+double-quote  are  shown  as octal escape sequences.  Example: "gold\040mine".
+If a field starts with a double-quote, it's a string field.
+
+FUTURE DIRECTIONS:  We might decide to support more C  escape  sequences,  but
+never \".
+
+Some  fields  can  contain  null  strings.  A null string is the three letters
+"nil".  If a field contains nil, it's a string field.
+
+Each table has a meta-table, which defines format and meaning of  its  fields.
+To show the meta-table for <TYPE>, use
+   [##:##] Command : xdump meta <TYPE>
+
+All  meta-tables  share the same meta-meta-table, which is its own meta-table.
+The command to show it is
+   [##:##] Command : xdump meta meta
+
+Fields correspond to selectors used in Empire conditionals (see  "info  Selec-
+tor"), and they use the same names.  Naturally, xdump shows fields correspond-
+ing to deity-only selectors only to deities.
+
+The command to display table <TYPE> is
+   [##:##] Command : xdump <TYPE> <RECORDS>
+
+Argument <RECORDS> selects which records to show, in common Empire syntax  for
+the kind of things in that table.  "*" always shows the complete table.
+
+To dump sector -22,2, for example, you can use:
+   [##:##] Command : xdump sect -22,2
+
+This dumps all ships with mobility in fleet a:
+   [##:##] Command : xdump ship a ?mobil>0
+
+This dumps all sectors changes after timestamp 1141068862:
+   [##:##] Command : xdump sect * ?timestamp>1141068862
+
+Use  this  with a value one less than the timestamp in the xdump header to get
+everything that changed since that xdump (incremental dump).
+
+FUTURE DIRECTIONS:  We may still extend the syntax  to  select  fields  to  be
+shown.
+
+The  table "table" is the table of (non-meta-)tables.  It contains table names
+and numbers.  xdump accepts table numbers as well as names.  Table numbers may
+differ between server versions.
+
+BUGS:  Still  missing  are game state files power, map, bmap; the list of com-
+mands; foreign levels, contact information, mortal access to  sector  selector
+mines,  ship  selectors  xbuilt, ybuilt, trade selectors xloc, yloc, commodity
+selectors xbuy, ybuy, xsell, ysell.  Some information is not yet available  in
+human-readable  form:  the  lost  file,  sect-chr  selector nav, ship and land
+plague status (deity only), plane theta (governs  satellite  movement),  trade
+selectors  xloc,  yloc,  commodity  selectors  xbuy,  ybuy.   Incremental dump
+doesn't work after importing news with the empdump utility.
+
+FUTURE DIRECTIONS:  xdump evolves along with the server.  Clients should  cope
+gracefully  with new tables and fields.  We try to avoid incompatible changes,
+but they are occasionally necessary to make progress.
+
+SEE ALSO
+   dump, ldump, ndump, pdump, sdump, lost, show, version, Communication,  Lan-
+dUnits, Planes, Sectors, Ships
+

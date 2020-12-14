@@ -1,0 +1,13 @@
+                                Command : GIVE
+
+NAME
+   give - Give(take) Commodities
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : give <COMM> <SECTS> <NUM>
+
+SEE ALSO
+   edit, swapsector, Deity
+

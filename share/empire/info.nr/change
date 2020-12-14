@@ -1,0 +1,31 @@
+                               Command : CHANGE
+
+NAME
+   change - Change country name or representative's name
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : change [country | representative] Newname
+
+This simple command enables you to rename your country, or your representative
+name associated with your country.
+
+COUNTRY NAME
+
+   [##:##] Command : change country Hodedo
+This will change the name of your country to "Hodedo".   In  order  to  change
+your  name you must pay 10% of your cash on hand and 254 btus.  These expenses
+reflect the trouble of changing all the national emblems,  stationary,  flags,
+etc.
+
+REPRESENTATIVE NAME
+
+   [##:##] Command : change representative ho
+Your  representative's name will now be "ho".  Note that the new name you type
+WILL print out, (in case of a typing error).  As a consequence you won't  want
+to do this while your arch-enemy is watching.
+
+SEE ALSO
+   nation, Nations
+

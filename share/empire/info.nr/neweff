@@ -1,0 +1,28 @@
+                               Command : NEWEFF
+
+NAME
+   neweff  -  Find  out what the efficiency of a sector will be after the next
+update
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : neweff <SECTS>
+
+Neweff predicts how efficient a sector or  sectors  will  be  after  the  next
+update.
+
+In  the  syntax  of  the  neweff command <SECTS> is the area on which you wish
+information, (see "info syntax").
+
+A typical usage might be:
+   [##:##] Command : neweff 2,0
+
+   EFFICIENCY SIMULATION
+      sect  des    projected eff
+      2,0    +     18%
+       1 sector
+
+SEE ALSO
+   Innards, Sectors, Updates
+

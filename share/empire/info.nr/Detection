@@ -1,0 +1,17 @@
+                             Subject : DETECTION
+
+ coastwatch *   Check from sectors for nearby ships
+   llookout *   Check from units for other units, planes and/or sector types
+    lookout *   Check from ships for other ships and/or sector types
+     lradar     Use a radar unit's radar
+      radar *   Perform radar scan from ship or sector
+      recon     Use planes to take a look around
+  satellite     Download data from a reconnaissance satellite
+   skywatch     Check from sectors for nearby satellites
+      sonar *   Use sonar to look for ships
+        spy *   Snoop on adjacent enemy sectors
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

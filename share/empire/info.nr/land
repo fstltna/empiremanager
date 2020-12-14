@@ -1,0 +1,40 @@
+                                Command : LAND
+
+NAME
+   land - Report status of land units
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : land <UNITS>
+
+The land unit report command is a census of your land units.  For example:
+   [##:##] Command : land *
+
+      # unit type          x,y   a   eff mil frt  mu  fd tch retr xl ln carry
+      0 cav   cavalry      1,-1     100%  10   0 127  12 992  75%  0  0
+      1 cav   cavalry      0,0      100%   0   0 127  12 968  75%  0  0
+      2 cav   cavalry      0,0      100%  10   0 127  12  40  75%  0  0
+   3 units
+
+The report format contains the following fields:
+
+        #  the unit number
+unit type  the type of land unit; "cavalry", "engineer", etc.,
+      x,y  the land unit's current location,
+        a  the army designation letter (set by "army" command),
+      eff  the land unit's efficiency, prefixed by "!" if stopped,
+      mil  the number of mil currently in the land unit,
+      frt  the land unit's fortification level,
+       mu  the mobility of the land unit,
+       fd  the amount of food on board,
+      tch  the tech level of the land unit,
+     retr  the retreat percentage of the land unit (see info "morale"),
+       xl  the number of extra-light planes on board,
+       ln  the number of land units on board,
+    carry  the ship or land unit the carrying the land unit, if any.
+
+SEE ALSO
+   lstat,  upgrade,  build, cargo, army, march, attack, assault, lload, llook-
+out, scrap, lmine, LandUnits
+

@@ -1,0 +1,47 @@
+                               Subject : PLANES
+
+         Flak *   How flak works
+ Interception     How plane interception works
+  Maintenance     The cost to maintain ships, planes, and land units.
+     Mobility     How much mobility stuff costs
+   Nuke-types     Description of different kinds of nuclear weapons
+  Plane-types *!  Description of different kinds of planes
+
+          arm     Load nuclear weapons onto planes or missiles
+         bomb *   Dispose of inconvenient enemy assets with air power.
+        build *   Build ships, planes, land units, nuclear weapons or bridges
+       disarm     Remove a nuclear warhead from a plane or missile
+         drop     Use planes to drop commodities in your own sectors
+          fly *   Fly planes from sector/ship to sector/ship and bomb or snoop
+       harden     Place missiles into protective silos
+       launch     Launch missiles or satellites
+         lost *   Report lost items
+      mission *   Assign a mission to a ship/plane/unit
+        ndump     Dump raw nuke information
+         nuke     Report status of nukes
+     paradrop     Attack a sector from the air
+        pbmap *   Big map of all your worldly knowledge around a plane
+       pboard *   Board enemy plane
+        pdump     Dump raw plane information
+        plane *   Report status of planes
+         pmap *   Get a map around a plane
+        pstat *   Report statistics of plane, wing or planes in a give area
+        range     Edit the range of a plane
+        recon     Use planes to take a look around
+    satellite     Download data from a reconnaissance satellite
+        scrap *   Scrap a ship, plane, or land unit
+      scuttle *   Destroy a ship, plane, or unit
+         show *   Characteristics of sectors, units, updates and more
+        start     Resume production and repairs
+         stop     Stop production and repairs
+        sweep     Use planes to remove mines from sea sectors
+    transport *   Move planes or nuclear devices around
+      upgrade      Update  the  tech  of a ship/unit/plane to the current tech
+                  level
+      wingadd     Designate members of a "wing"
+        xdump     Extended dump of everything under the sun
+
+For info on a particular topic, type "info <topic>" where <topic>  is  one  of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.  Topics with unusually long info are marked with a !.
+

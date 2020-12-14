@@ -1,0 +1,25 @@
+                               Subject : NUKES
+
+    Fallout     The long lasting effects of nuclear war
+   Mobility     How much mobility stuff costs
+ Nuke-types     Description of different kinds of nuclear weapons
+
+        arm     Load nuclear weapons onto planes or missiles
+      build *   Build ships, planes, land units, nuclear weapons or bridges
+     harden     Place missiles into protective silos
+     launch     Launch missiles or satellites
+       lost *   Report lost items
+      nbmap *   Big map of all your worldly knowledge around a nuke
+      ndump     Dump raw nuke information
+       nmap *   Generate a map showing new sector types or around a nuke
+       nuke     Report status of nukes
+       show *   Characteristics of sectors, units, updates and more
+      start     Resume production and repairs
+  stockpile     Designate members of a "stockpile"
+       stop     Stop production and repairs
+  transport *   Move planes or nuclear devices around
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

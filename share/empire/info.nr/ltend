@@ -1,0 +1,16 @@
+                               Command : LTEND
+
+NAME
+   ltend - Transfer things between a unit and the ship carrying it
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : ltend <COMMODITY> <SHIP> <AMT> <to-UNIT/ARMY>
+
+The  ltend  command allows transfer of commodities from a particular ship to a
+land unit it is carrying.
+
+SEE ALSO
+   load, unload, lload, lunload, tend, Ships, LandUnits, Moving
+

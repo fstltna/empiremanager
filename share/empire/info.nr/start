@@ -1,0 +1,23 @@
+                               Command : START
+
+NAME
+   start - Resume production and repairs
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : start <TYPE> <SECTS|SHIPS|PLANES|UNITS|NUKES>
+
+The start command orders stopped production and repairs to resume.
+
+   [##:##] Command : start se 2,0
+
+   Wed Jan 20 21:37:22 1993
+   PRODUCTION STARTING
+     sect        eff
+      2,0    c  100% will be updated normally.
+       1 sector
+
+SEE ALSO
+   stop, census, Producing, Updates, Planes, Ships, LandUnits, Nukes
+

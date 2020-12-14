@@ -1,0 +1,57 @@
+                               Command : LSTAT
+
+NAME
+   lstat - Report statistics of unit, army or units in a given area
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : lstat [<UNIT/ARMY> | <SECTS>]
+
+The  lstat  command  is  a  report of the varying statistics of your units and
+lists the info in a readable format.  Since your  units'  statistics  vary  by
+tech  level,  this  is a very useful way to see what the attack, defense, etc.
+modifiers are on a per-unit basis.
+
+The <UNIT/ARMY> and <SECTS> arguments are provided in case you  only  wish  to
+look at one unit or one army or all units within a given area.
+
+Lstat  expects  an  argument.  To see every unit you own, give it the argument
+'*', i.e. type "lstat *".
+
+The report format contains the following fields:
+
+     lnd#  the unit number
+unit-type  the type of unit
+      x,y  the unit's current location (relative to your origin),
+      eff  the unit's efficiency,
+     tech  the tech level of the unit
+      att  the attack multiplier of the unit
+      def  the defense multiplier of the unit
+      vul  the vulnerablilty of the unit (see "info Damage")
+      spd  the speed of the unit (see "info Mobility")
+      vis  the visibility of the unit
+      spy  the distance a unit can see
+      rad  the maximum reaction radius of the unit
+      rng  twice the distance the guns can fire, The range formula is  (rng/2)
+           * ((tech + 50) / (tech + 200))
+      acc  the firing accuracy of the unit
+      fir  the number of guns that fire when the unit fires
+      amm  the amount of ammunition the unit uses per shot fired
+      aaf  the amount of anti-aircraft fire the unit produces
+
+For example:
+   [##:##] Command : lstat *
+
+                                                         s  v  s  r  r  a  f  a  a
+                                                         p  i  p  a  n  c  i  m  a
+   lnd# unit-type           x,y    eff tech att def vul  d  s  y  d  g  c  r  m  f
+      0 cav   cavalry       1,-1   100% 992 3.4 1.6  54 52 18  4  3  0  0  0  0  0
+      1 cav   cavalry       0,0    100% 968 3.4 1.6  55 51 18  4  3  0  0  0  0  0
+      2 cav   cavalry       0,0    100%  40 1.9 0.9  74 36 18  4  3  0  0  0  0  0
+   3 units
+
+SEE ALSO
+   land, upgrade, build, cargo, army, march, attack, assault, lload, llookout,
+scrap, lmine, LandUnits
+

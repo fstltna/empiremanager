@@ -1,0 +1,37 @@
+                               Command : LBOARD
+
+NAME
+   lboard - Board enemy land unit
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : lboard [<VICTIM UNIT>] [<FROM SECT>]
+
+The  lboard  command  enables  the owner of a sector to engage in hand-to-hand
+combat with a land unit in that sector.  To board unit #5 from sector 1,-1 you
+might type:
+   [##:##] Command : lboard 5
+
+The  program  will ask from which sector you wish to board and how many troops
+to board with.
+
+In order to board a land unit from a sector, the land unit must be in the sec-
+tor, and the sector must have mobility.
+
+Some things to note:
+
+Any  land units in the combat will fight as if they were simply mil, i.e. they
+won't get any offensive of defensive multiplier,  except  for  "marine"  units
+which get their full bonus.  Similarly, units on land units don't have to take
+morale checks, as they are fighting as mil.  Mil on the victim unit will still
+die before units take casualties, however.
+
+Note  that you can only board with as many mil that the unit you are trying to
+board can hold.
+
+See info "Attacking" for the exact procedure.
+
+SEE ALSO
+   Attacking, LandUnits, Combat
+

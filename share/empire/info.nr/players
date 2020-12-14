@@ -1,0 +1,29 @@
+                              Command : PLAYERS
+
+NAME
+   players - List players currently connected to the game
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : players
+
+   [##:##] Command : players
+
+   Fri Sep 29 17:27:42 1995
+               #                                   time  idle last command
+   Khazad'ur  34             tetherow@nol.nol.org  0:38   32s cen 0,0
+   children    0    children@RedDragon.Empire.Net  0:16    7s play
+   2 players
+
+#  the country number of the player.
+time  the total number of hours:minutes the player has been connected today
+idle  the number of seconds since the player has typed their last command
+last command  the last command that the player typed
+
+If you are not a deity and the BLITZ option is off, then the "players" command
+will only list your allies (and omit userid@host.name).
+
+SEE ALSO
+   country, Nations, Communication, Deity, Playing
+

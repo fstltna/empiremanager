@@ -1,0 +1,40 @@
+                                Command : MINE
+
+NAME
+   mine - Drop sea mines from a ship
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : mine <SHIP> <NUMBER>
+
+This  command  drops  mines in the sea and is functional from ships with mine-
+laying capability (see "info Ship-types").
+
+See "info Hitchance" for the chance of a ship hitting a mine.
+
+In the command syntax <SHIP> is the number of one of your ships  and  <NUMBER>
+is  the  number  of  mines you wish to drop.  That number of shells, (assuming
+you've got them), will be dropped in the sector that ship occupies,  magically
+becoming mines as they hit the water.
+
+Mines  can  only  be removed safely by a minesweeper.  (Other ships can remove
+them by hitting them, but...)  Planes with the 'sweep' ability can clear mines
+by  flying recon missions through mined sectors, with each passage through the
+sector possibly removing some mines.
+
+Ships of tech 310 or higher can detect mines  with  their  sonar.   See  "info
+sonar" for more information.
+
+Note  that the sector is checked for possible mine hits only when a ship moves
+into it; thus, a ship may safely drop mines in a sector and then move out.  On
+the other hand, the mines know no allegiance, so moving back into a mined sec-
+tor is foolish at best.
+
+Building a bridge clears all mines there.
+
+You cannot drop sea mines into a harbor, only land mines.
+
+SEE ALSO
+   navigate, Hitchance, Damage, Ships
+

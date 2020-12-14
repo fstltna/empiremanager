@@ -1,0 +1,32 @@
+                                Command : NUKE
+
+NAME
+   nuke - Report status of nukes
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : nuke <NUKES>
+
+The nuke report command is a census of your nukes.  For example:
+   [##:##] Command : nuke *
+
+      # nuke type              x,y    s   eff tech carry burst
+      0 10kt  fission        -24,-4      100%  296   19P   air
+      2 15kt  fission        -19,-1      100%  296
+   2 nukes
+
+The report format contains the following fields:
+
+        #  the nuke number
+nuke type  the type of nuke; "10kt fission", "1mt fusion", etc.,
+      x,y  the nuke's current location,
+        s  the "stockpile" designation letter,
+      eff  the nuke's efficiency, prefixed by "!" if stopped,
+     tech  the tech level at which it was created,
+    carry  the plane the nuke is on, if any,
+    burst  whether the nuke is programmed for air or ground burst.
+
+SEE ALSO
+   arm, build, launch, transport, Planes, Nukes
+

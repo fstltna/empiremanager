@@ -1,0 +1,32 @@
+                              Subject : SECTORS
+
+          Bridges     Building and destroying bridges
+   Infrastructure *   Making your sectors better
+         Mobility     How much mobility stuff costs
+        Quick-ref *   A quick reference card for sector types
+ Sector-ownership *   Sector ownership
+     Sector-types *!  Description of different sector types
+
+             anti *   anti-terrorist actions
+            build  *    Build  ships,  planes,  land units, nuclear weapons or
+                      bridges
+           census *   Report contents of sectors
+        commodity *   Report commodities in sectors
+        designate *   Specify sector utilization
+             dump     Dump raw sector information
+          explore *   Claim unowned land
+          improve *   Improve the infrastructure of a sector
+             lost *   Report lost items
+           neweff     Find out what the efficiency of a sector will  be  after
+                      the next update
+            radar *   Perform radar scan from ship or sector
+         resource *   Show the resources of sectors
+  sinfrastructure *   Report infrastructure of sectors
+              spy *   Snoop on adjacent enemy sectors
+        territory     Assign various sectors to a specific territory
+            xdump     Extended dump of everything under the sun
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.  Topics with unusually long info are marked with a !.
+

@@ -1,0 +1,56 @@
+                               Command : ENLIST
+
+NAME
+   enlist - Turn civilians into military
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : enlist <SECTS> <NUMBER>
+
+The  enlist command converts civilians into military in the sectors specified.
+Military "created" by the enlist command are actually reserves called up  from
+your  country's  military  reserve.   If your country has no military reserves
+(created by "demobilize") then no civilians will be converted and no  military
+will be generated.
+
+After  the  program has collected any necessary information, it will list each
+sector where civilians answer the call and the number who showed  up  followed
+by the total number of military resulting (in parentheses).
+
+If  <NUMBER>  is  a  positive number that many draftees will be sought in each
+sector regardless of any military already in the sector.
+
+If <NUMBER> is a negative number of the form -xxx, then an enlistment quota is
+established  and  the draft board will attempt to enlist enough in each sector
+to bring the total number of military up to xxx in each sector.
+
+Although the program tries to draft the specified number of civilians in  each
+sector  only  one-half  of the civilians in a sector can be called upon at any
+one time.
+
+Civilians in conquered sectors (the conquered populace) will not serve in your
+armed forces.
+
+   [##:##] Command : enl -3:3,-1:2 10
+
+   Number to enlist (max 397) : 22
+    22 enlisted in -1,-1 (30)
+    13 enlisted in 1,-1 (13)
+    22 enlisted in 3,-1 (30)
+    17 enlisted in -2,0 (17)
+    22 enlisted in 0,0 (36)
+    22 enlisted in -1,1 (34)
+    22 enlisted in 1,1 (34)
+    18 enlisted in 0,2 (18)
+    22 enlisted in 2,2 (45)
+   Total new enlistment : 180
+   Paperwork at recruiting stations ... 3.6
+
+Note  that  there  is a cost of 0.02 BTUs per draftee in addition to the basic
+cost of the command and enlistees use  up  some  mobility  in  the  enlistment
+process (see "info Mobility" for the exact formula).
+
+SEE ALSO
+   demobilize, Mobility, Populace
+

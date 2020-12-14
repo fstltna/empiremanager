@@ -1,0 +1,29 @@
+                               Command : UNLOAD
+
+NAME
+   unload - Inverse of load (above)
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : unload <COMMODITY> <SHIPS> <AMOUNT>
+
+SYNTAX
+   [##:##] Command : unload plane <SHIPS> <PLANES>
+
+SYNTAX
+   [##:##] Command : unload land <SHIPS> <UNITS>
+
+The  unload  command is the opposite of load and follows the exact same syntax
+...  so why look here for documentation?
+
+The only thing to know is that unload won't unload more of a thing if the sec-
+tor  already  has  999. For example, if a ship has 10 food, and the harbor has
+994, you can only unload 5 of the 10 food.
+
+Also, you must have Friendly relations with the owner of the harbor  in  order
+to unload into it.
+
+SEE ALSO
+   load, Ships, Moving
+

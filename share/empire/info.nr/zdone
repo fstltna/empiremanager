@@ -1,0 +1,42 @@
+                               Command : ZDONE
+
+NAME
+   zdone - Indicate willingness to have an update
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : zdone [yes|no|check]
+
+The zdone command allows you to say when you are done and ready for an update.
+
+"yes" says that you are ready for an update.
+
+"no" clears any previous "yes" that you did.
+
+"check" checks to see what your zdone state is.
+
+The  command will also show you how many countries want an update.  The number
+of ready countries required for a demand update to happen is configurable, and
+may be seen in the "show updates" command.
+
+There are three possible update policies which could be set in this game:
+
+1. No demand updates.  If so, then this command is useless.
+
+2. Demand updates occur right after the last required country sets zdone.
+
+3. Demand updates occur according to the update schedule.  If enough countries
+have set zdone by the scheduled time, then an update will occur.   The  update
+schedule may be seen in the "show updates" command.
+
+Your zdone state is cleared when an update occurs.
+
+The "show updates" command shows update policy and schedule.
+
+For  deities, the command takes an additional parameter: the country to imper-
+sonate.
+
+SEE ALSO
+   show, Updates
+

@@ -1,0 +1,15 @@
+                               Command : ENABLE
+
+NAME
+   enable - Enable updates
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : enable
+
+If updates have been disabled, then this will enable them again.
+
+SEE ALSO
+   disable, show, force, Deity
+

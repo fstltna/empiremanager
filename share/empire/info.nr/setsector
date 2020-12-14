@@ -1,0 +1,16 @@
+                             Command : SETSECTOR
+
+NAME
+   setsector - Change stats of a sector
+
+Level: Obsolete
+
+SYNTAX
+   [##:##] Command : setsector <TYPE> <SECTS> <NUM>
+
+This  command  is  obsolete  and will go away in a future version.  Use "edit"
+instead.
+
+SEE ALSO
+   give, edit, Deity
+

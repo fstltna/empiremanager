@@ -1,0 +1,29 @@
+                               Command : SURVEY
+
+NAME
+   survey - Show distributions in map form
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : survey <SELECTOR> <SECTS>
+
+The survey command shows the distribution of some sector selector value in map
+form.  This is especially useful for commodities and resources.
+
+If <SELECTOR> can have large values, like  commodity  selectors,  then  survey
+shows  hundreds, else tens of the value, as digits from 0 to 9.  Sectors which
+have a value less or equal zero show up as blank.  Sectors whose value exceeds
+999 or 99 respectively show up as '$'.
+
+Surveyed sectors will be highlighted.
+
+If  you  supply  conditions (see "info Syntax"), then sectors not matching the
+conditions will not be surveyed, but have their current designation  displayed
+as in a map instead.
+
+Sectors not owned by you will show up as blanks.
+
+SEE ALSO
+   sect, map, Maps
+

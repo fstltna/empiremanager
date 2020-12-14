@@ -1,0 +1,47 @@
+                              Command : COLLECT
+
+NAME
+   collect - Foreclose an overdue loan
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : collect <LOAN>
+
+The  collect command is the loan-shark's delight!  Through the collect command
+overdue loans can be "cleared up".
+
+If you should find that you have a problem debtor who refuses  to  pay  up  on
+your kind loan you can always seize one or more of his/her sectors.
+
+To settle up accounts on overdue loan #9 you would type:
+   [##:##] Command : collect 9
+The  program  would  then ask which sector you would like to claim as just and
+rightful compensation for the outstanding debt.
+
+   What sector do you wish to confiscate?
+
+To which you reply with the coordinates of a sector owned by  your  debtor  to
+which you are adjacent.  Any adjacent sector includes any sector you have that
+borders the sector you wish to confiscate.
+
+The program then paws over the sector and assesses its value.  If  the  amount
+you  are  owed  exceeds this amount the sector becomes yours!  If the value of
+the sector is close enough to the amount you are owed the debt  is  considered
+to be repaid.
+
+Any  che  in  the  area are left alone.  Thus, if the original owner takes the
+sector back over, the che would continue their  battle  against  the  original
+owner, not the new owner.
+
+In  addition,  ships,  land  units, planes and nuclear stockpiles are not col-
+lected.  Those remain the property of the owner of the sector.
+
+Standing military in the sector are reduced to 1 and he becomes the latest and
+greatest addition to your standing army.
+
+Mobility of the collected sector remains unchanged.
+
+SEE ALSO
+   consider, ledger, offer, shark, Loans
+

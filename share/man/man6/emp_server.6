@@ -1,0 +1,112 @@
+.TH EMP_SERVER 6
+.\" Note: Options specific to the native Windows port are suppressed
+.\" unless you format with non-zero number register w, e.g. by
+.\" supplying -rw1 to nroff.
+.SH NAME
+emp_server \- Empire server
+.SH SYNOPSIS
+.B emp_server
+[\fB\-dFhpsv\fP]
+[\fB\-e\fP \fIconfigfile\fP]
+[\fB\-E\fP \fIaction\fP]
+[\fB\-R\fP \fIseed\fP]
+.if \nw \{\
+.br
+.B emp_server
+[\fB\-i\fP
+|\fB\-I\fP \fIservice-name\fP]
+[\fB\-e\fP \fIconfigfile\fP]
+.br
+.B emp_server
+[\fB\-u\fP
+|\fB\-U\fP \fIservice-name\fP]\}
+.SH DESCRIPTION
+.B emp_server
+is a daemon which listens to the Empire port for players connecting to
+the game.  For more information on the game of Empire, see the info
+pages within the game.
+.SH OPTIONS
+.TP
+.B \-d
+Debug mode.  This will prevent the server from forking itself into the
+background.  Implies -E abort.  You normally want to use this flag if
+you are running
+.B emp_server
+from within a debugger.
+.TP
+.BI \-e " configfile"
+Use game configuration in \fIconfigfile\fR.
+.TP
+.BI \-E " action"
+What to do on recoverable internal error ("oops"): \fBabort\fP,
+\fBcrash\-dump\fP (but continue), \fBnothing\fP (default).
+.ie \nw \fBcrash-dump\fP is not implemented for Windows.
+.el \fBcrash-dump\fP works by aborting a fork of the server process.
+.TP
+.B \-F
+Force
+.B emp_server
+to start even when game state looks bad.  Risks crashes and further
+corruption; use this only for attempting to fix up problems.  Better
+make a backup first, and lock out players.
+.TP
+.B \-h
+Help.  Print brief usage information and exit.
+.if \nw \{\
+.TP
+.B \-i
+Install as a Windows Service called "Empire Server".
+.TP
+.BI \-I " service-name"
+Install as a Windows Service with the specified name.\}
+.TP
+.B \-p
+Threading debug mode.  Implies \fB-d\fR.
+.if \nw \{\
+.TP
+.B \-u
+Uninstall the Windows Service called "Empire Server".
+.TP
+.BI \-U " service-name"
+Uninstall the Windows Service with the specified name.\}
+.TP
+.B \-s
+Enable thread stack checking.
+.TP
+.B \-R " seed"
+Set the seed for random function.
+.TP
+.B \-v
+Print version information and exit.
+.SH OPERANDS
+Operands are ignored for backward compatibility.  Their use is
+deprecated.
+.if !\nw \{
+.SH SIGNALS
+.TP
+.B SIGHUP
+Request
+.B emp_server
+to reopen log files and reload its configuration.  This allows proper
+log rotation.  Only the update schedule is reloaded at this time.
+.TP
+.BR SIGINT ", " SIGTERM
+Request
+.B emp_server
+to shut down immediately.
+\}
+.if \nw \{
+.SH RESTRICTIONS
+When using the service control manager (Services Window), the start
+parameters are not processed.  The only parameters processed are the
+ones supplied during service installation.  To modify the startup
+parameters, you must remove the service and reinstall the service.\}
+.SH BUGS
+Please report all bugs to the Wolfpack <wolfpack@wolfpackempire.com>
+.SH "SEE ALSO"
+\fIempire\fR(6), \fIempsched\fR(6), \fIfairland\fR(6), \fIfiles\fR(6),
+\fIpconfig\fR(6).
+.SH AUTHORS
+Dave Pare, Jeff Bailey, Thomas Ruschak, Ken Stevens, Steve McClure and
+Markus Armbruster are principal authors.  The full list of authors is
+too long to include here.

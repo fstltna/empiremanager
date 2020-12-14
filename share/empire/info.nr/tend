@@ -1,0 +1,34 @@
+                                Command : TEND
+
+NAME
+   tend - Transfer commodities between ships
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : tend <COMMODITY|'land'> <SHIP> <AMT|UNIT> <to-SHIP>
+
+The tend command allows transfer of commodities between ships.
+
+If  you  had  cargo ship #16 which had food, and your fleet S needed food, you
+could resupply the entire fleet with 20 units of food by typing
+   [##:##] Command : tend food 16 20 S
+
+Requirements are that the tending ship must be  in  the  same  sector  as  the
+tended  ships, and it must be yours, or belong to a country that considers you
+a friendly trading partner.  A positive <AMT> indicates the amount the  tender
+will  give  away, while a negative amount indicates the amount that the tender
+will try to extract from each ship. (However, you cannot  take  goods  from  a
+friendly ship by giving a negative amount)
+
+Only land units with the "assault" capability may be tended between ships.  If
+you wanted to tend land unit #23 from ship #8 to  ship  #17,  then  you  would
+type:
+   [##:##] Command : tend land 8 23 17
+Besides  the "assault" capability restriction, tending land units has the same
+effect as though you were simply loading the unit onto a ship.  In particular,
+you may tend land units to "friendly" ships in the same sector.
+
+SEE ALSO
+   load, unload, lload, lunload, ltend, Ships, Moving
+

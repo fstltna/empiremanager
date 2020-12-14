@@ -1,0 +1,13 @@
+                               Subject : LOANS
+
+   collect     Foreclose an overdue loan
+  consider     Accept, decline or postpone consideration of a loan
+ financial     Show all the outstanding loans in the world
+    ledger     Report on outstanding loans
+     offer     Offer a loan to another country
+     repay     Repay a loan (all or part)
+     shark     Purchase defaulted loan
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.
+

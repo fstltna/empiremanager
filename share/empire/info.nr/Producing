@@ -1,0 +1,18 @@
+                             Subject : PRODUCING
+
+    Education     How Education is calculated at the update
+    Happiness     How happiness is calculated at the update
+   Item-types *   Description of the different types of items
+     Products *   Formulas for the production of commodities
+     Research     How Research level is calculated each update
+ Sector-types *!  Description of different sector types
+   Technology     How technology level is calculated each update
+
+   production *   Predicts production of sectors at the next update
+        start     Resume production and repairs
+         stop     Stop production and repairs
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.  Topics with unusually long info are marked with a !.
+

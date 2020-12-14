@@ -1,0 +1,58 @@
+                          Command : SINFRASTRUCTURE
+
+NAME
+   sinfrastructure - Report infrastructure of sectors
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : sinfrastructure <SECTS>
+
+The  sinfrastructure  command  displays specific infrastructure information on
+some or all of the sectors you occupy.
+
+In the syntax of the census command <SECTS> is the  area  on  which  you  wish
+information, (see "info syntax").
+
+A typical usage might be:
+   [##:##] Command : sinfrastructure 0:9,0:9 ?des=m
+which would list data for mines in an area to the south-east of the capital.
+
+A sinfrastructure lists each of your sectors in the specified area headed by:
+
+   Thu Aug  8 08:37:03 1996
+                         road        rail       defense
+     sect        eff   eff mcost   eff mcost   eff  fact
+
+These columns represent:
+
+        sect  the x and y coordinates of the sector
+         eff  the  efficiency  of the sector (affects all benefits of a desig-
+              nated sector except mobility and defense)
+    road eff  the road efficiency of the sector
+  road mcost  the mcost used to determine the mobility cost of  moving  things
+              and marching non-train units through the sector
+    rail eff  the rail efficiency of the sector
+  rail  mcost  the  mcost used to determine the mobility cost of moving trains
+              through the sector.  If the rail eff is 0,  trains  cannot  move
+              through this sector.
+ defense eff  the defense efficiency of the sector.
+defense  fact  the  defense factor of the sector.  This is how well the sector
+              defends.  All sectors start at 1, and  improve  (see  "improve")
+              from there to the maximum shown in "show sect stats"
+
+For example:
+   [##:##] Command : sinf #0
+
+   Thu Aug  8 08:37:03 1996
+                         road        rail       defense
+     sect        eff   eff mcost   eff mcost   eff  fact
+      1,-1   f    0%    0% 0.400    0% 0.400    6%  1.18
+      0,0    c  100%    2% 0.192   28% 0.113    8%  1.08
+      2,0    m  100%    0% 0.200    0% 0.200  100%  2.00
+   3 sectors
+
+SEE ALSO
+   improve,  census,  commodity,  resource, Sectors, Infrastructure, Mobility,
+Commodities
+

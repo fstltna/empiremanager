@@ -1,0 +1,63 @@
+                             Concept : Nuke Types
+
+NAME
+   Nuke-types - Description of different kinds of nuclear weapons
+
+Level: Expert
+
+There  are  two  different  types of nuclear devices in Empire: fission bombs,
+fusion bombs.  Both fission and fusion bombs perform  similarly,  with  fusion
+bombs giving "more bang for the buck".
+
+In  general,  the only way to avoid damage by a nuclear detonation is to avoid
+the area prior to and during  actual  detonation.   "Hardening"  missiles  (in
+silos)  is  the only exception, and even that cannot protect from a direct hit
+by the larger nuclear devices.
+
+The details of the nuclear devices present in Empire can  be  seen  using  the
+show command.  The meaning of the fields are as follows:
+
+     name  The nukes name.
+      lcm  The amount of lcm needed to build the nuke
+      hcm  The amount of hcm needed to build the nuke
+      oil  The amount of crude oil required to build it.
+      rad  The number of radioactive products required to build it.
+    avail  The avail (work) required to build the nuke.
+     tech  The minimum tech level required to construct the nuke.
+      res  The minimum research level required to construct the nuke.
+        $  The cost of the nuke to construct.
+     blst  The blast type of the nuke
+      dam  The damage rating of the nuke
+      lbs  the  weight  of  the  warhead,  limiting  missile and plane nuclear
+           device carrying capacity.
+abilities  Special abilties, if any
+
+The abilities are as follows:
+
+neutron  Creates much more severe nuclear fallout.
+
+As a guide (these numbers are subject to change):
+   [##:##] Command : show nuke build
+
+   Printing for tech level '300'
+                 lcm hcm  oil  rad avail tech res $
+   10kt  fission  50  50   25   70    49  280   0 $ 10000
+   15kt  fission  50  50   25   80    51  290   0 $ 15000
+   50kt  fission  60  60   30   90    60  300   0 $ 25000
+
+   [##:##] Command : show nuke capab
+
+   Printing for tech level '300'
+                 blst dam lbs tech res $        abilities
+   10kt  fission    3  70   4  280   0 $  10000
+   15kt  fission    3  90   5  290   0 $  15000
+   50kt  fission    3 100   6  300   0 $  25000
+
+The larger the megatonnage, the more damage done by the weapon.   Effects  (as
+in  the  real  world)  can  only  be  determined  by experimentation, although
+research suggests that radioactivity left behind by  nuclear  detonations  may
+have lasting effects.
+
+SEE ALSO
+   launch, fly, build, transport, show, Planes, Nukes, Fallout
+

@@ -1,0 +1,38 @@
+                               Server : OPTIONS
+
+NAME
+   Options - Server options
+
+Level: Expert
+
+    ALL_BLEED  You get tech bleed from all countries, not just allies.
+   AUTO_POWER  Power report is only updated automatically, at the update.
+        BLITZ  Players get infinite BTUs.
+ BRIDGETOWERS  You  can  build bridge towers, which allow you to build bridges
+               from them.
+ EASY_BRIDGES  Bridges can be built from any sector.
+      FALLOUT  Sectors are damaged by radiation for a few updates after blast.
+      GODNEWS  The world is told via news when deities are  giving  or  taking
+               things from players.
+     GO_RENEW  Gold and Oil are renewable resources.
+  GUINEA_PIGS  Experimental  stuff  not  ready for prime time.  Enable at your
+               own risk!
+       HIDDEN  Hides information about countries you haven't contacted.
+INTERDICT_ATT  Interdict units & mil as they move in after an attack.
+        LOANS  Allows S&L type interaction between countries.
+ LOSE_CONTACT  In HIDDEN, lose contact after a few updates.
+       MARKET  Enable time-delay market and trade.
+   MOB_ACCESS  Allows real-time updating of mobility.
+       NOFOOD  No food is required.
+    NOMOBCOST  Firing a ship's guns costs no mobility.
+ NO_FORT_FIRE  Forts cannot fire.
+    NO_PLAGUE  Plague is disabled.
+     RAILWAYS  Highways double as rail.
+      RES_POP  Research affects max sector population.
+   SUPER_BARS  Gold bars aren't destroyed by shelling or bombing.
+     TECH_POP  Technology costs more to make as your civilian population grows
+               past 50,000 civilians.
+
+SEE ALSO
+   Hidden, Server, version
+

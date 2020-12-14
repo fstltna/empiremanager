@@ -1,0 +1,24 @@
+                              Subject : PLAYING
+
+      BTU     How BTUs are generated
+ Selector *   Selectors you can use in Empire conditionals
+    Sheep     Ovis aries
+   Syntax *   The Empire command syntax
+     Time     ETUs, BTUs and ETL
+
+  apropos *   Searches info pages for information on a topic
+      bye *   Log out of Empire
+  country     Find out country status
+  execute     Execute a batch file
+     help *   Provide information on various topics
+     info *   Provide information on various topics
+     list     List commands which are currently legal
+  players     List players currently connected to the game
+     pray *   Interacting with the Deity
+     quit *   Log out of Empire
+  version     Display parameters of this world
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

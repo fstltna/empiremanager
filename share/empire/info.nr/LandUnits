@@ -1,0 +1,49 @@
+                             Subject : LANDUNITS
+
+  Land-units *!  How to use land units
+ Maintenance     The cost to maintain ships, planes, and land units.
+    Mobility     How much mobility stuff costs
+    Railroad     How railroads work
+       Spies     How spies work
+  Unit-types *   Description of the different types of land units
+
+        army     Designate members of an "army"
+     assault *   Attack coastal sector from ship
+      attack *   Sector vs. sector combat
+       board *   Board enemy ship
+       build *   Build ships, planes, land units, nuclear weapons or bridges
+     fortify *   Fortify a land unit
+        land *   Report status of land units
+       lbmap *   Big map of all your worldly knowledge around a land unit
+      lboard *   Board enemy land unit
+      lcargo *   List the commodities on board your units
+       ldump     Dump raw land unit information
+       lload *   Load things onto land units
+    llookout *   Check from units for other units, planes and/or sector types
+        lmap *   Map around a land unit
+       lmine     Mine a sector with an engineering unit
+        lost *   Report lost items
+      lradar     Use a radar unit's radar
+    lretreat     Set retreat conditions/paths for units or armies
+       lstat *   Report statistics of unit, army or units in a given area
+       ltend     Transfer things between a unit and the ship carrying it
+     lunload *   Unload things from land units
+       march *   Move a land unit or units
+     mission *   Assign a mission to a ship/plane/unit
+      morale     Change the retreat percentage of a unit
+    sabotage *   Damage enemy territory with spy unit
+       scrap *   Scrap a ship, plane, or land unit
+     scuttle *   Destroy a ship, plane, or unit
+        show *   Characteristics of sectors, units, updates and more
+       start     Resume production and repairs
+        stop     Stop production and repairs
+      supply *   Cause a unit to draw supplies
+     upgrade      Update  the  tech  of  a ship/unit/plane to the current tech
+                 level
+        work     Use engineers to raise sector efficiency
+       xdump     Extended dump of everything under the sun
+
+For info on a particular topic, type "info <topic>" where <topic>  is  one  of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.  Topics with unusually long info are marked with a !.
+

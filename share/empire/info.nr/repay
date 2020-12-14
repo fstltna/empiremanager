@@ -1,0 +1,35 @@
+                               Command : REPAY
+
+NAME
+   repay - Repay a loan (all or part)
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : repay <LOAN>
+
+The repay command is used to repay loans from other countries.
+
+The  <LOAN>  argument  is  the  number of the loan you are repaying and if not
+included on the command line it will be solicited by the program.
+
+You can repay all or part of the loan with this  command;  however  beware  of
+letting  the  loan become overdue -- the lender may decide to force collection
+(see "info collect").
+
+When you repay on a loan a telegram is sent to the lender informing her/him of
+the amount repaid.
+
+   [##:##] Command : repay 12
+
+   You presently owe $4515    payment : $2000
+
+or,
+   [##:##] Command : repay 12
+
+   You presently owe $4515   payment : $4515
+   Congratulations, you've paid off the loan!
+
+SEE ALSO
+   collect, consider, ledger, offer, Loans
+

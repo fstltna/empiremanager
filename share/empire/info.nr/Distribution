@@ -1,0 +1,15 @@
+                            Subject : DISTRIBUTION
+
+     cutoff     List delivery thresholds
+    deliver     Establish delivery routes for shells, ore, etc
+ distribute *   Establish distribution destination sector
+      level *   List distribution thresholds
+       path     Show the distribution path of a sector
+      route     Display delivery routes
+  threshold *   Set commodity distribution thresholds
+       wipe     Remove all distribution thresholds
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

@@ -1,0 +1,113 @@
+                           Concept : Command Syntax
+
+NAME
+   Syntax - The Empire command syntax
+
+Level: Basic
+
+The Empire Shell (command interpreter) expects input in the form:
+   [##:##] Command : VERB ARG1 ARG2 ...
+VERB  is  any  one  of the Empire commands on the "command list" (what you see
+when you type "list"-- e.g.  "map", "move", "info", etc).
+
+The number of ARGs varies from command to command.  In  most  cases  the  ARGs
+need  not  be  supplied on the command line; any that are not supplied will be
+obtained by prompting.  The exception to this rule are  those  ARGs  that  are
+enclosed in [square brackets] in the command list.  The presence of these ARGs
+changes the way the command is carried out.
+
+Certain basic argument types recur often and are abbreviated in the  following
+ways.
+
+<TYPE>  ::=  'se',  'sh',  'l',  or  'p' for sector, ship, land unit, or plane
+   respectively.  If "sector" is not a possibility, then 's' will likely  suf-
+   fice for "ship".
+
+<CNUM/CNAME> ::= either a country number or a country name
+
+<COMM>  ::= any one, (or unambiguous abbreviation), of the list of commodities
+   found in "info Selector":
+
+<LOAN> ::= loan number
+
+<SECT> ::= sector coordinates in the form: x,y
+
+<SECTS> ::= sector(s) in the form:
+
+         lox:hix,loy:hiy ?cond&cond&...
+
+   "lox", "hix", "loy", "hiy" are coordinates bounding the rectangular area to
+   be considered
+
+   "cond" is a condition of the form:
+
+         <VALUE><OPERATOR><VALUE>
+
+   <VALUE>  is  either a <COMM>, as above, a number in the range 0 to 65536, a
+   sector designation, ("m" for mine, "c" for capital, etc), a  type  of  unit
+   ("frigate", "cavalry", etc), or a selector found in "info Selector".
+   <OPERATOR> can be any one of:
+   <  less than
+   =  equal
+   >  greater than
+   #  not equal
+
+   Thus  "mob=100",  "ore#0",  "7=guns",  "civ#mil",  "des=b"  are examples of
+   legitimate conditions, (note lack of embedded spaces), and
+      [##:##] Command : census -3:3,-3:3 ?des=+&gun=5&mil>civ
+   will list all highways within 3 of your capital with  exactly  5  guns  and
+   more military than civilians.
+
+   Similarly,
+      [##:##] Command : deliver f -9:9,-9:9 ?f_del=0
+   will  allow  you  to  set  up  food  delivery in all the sectors that don't
+   already have food delivery.
+
+   Note that "hix", "hiy", and "?cond" are all  optional.   Also,  the  entire
+   "lox:hix,loy:hiy"  section may be replaced by either "#", "#0", "#1", "#2",
+   or "#3", ... which refer to "realm"s which  you  can  define.   (See  "info
+   realm".)   Note  that  "#" and "#0" are equivalent.  Also "*" refers to all
+   sectors, and "@x,y:dist" refers to all sectors within dist of x,y.
+
+<SHIP> ::= one ship number
+
+<FLEET> ::= fleet designation, which may be  a  list  of  ships  separated  by
+   slashes  (`/'),  a  fleet letter, the character tilde (`~') which means all
+   ships not in a specific fleet, or a rectangular sector area.
+
+<SHIP/FLEET> ::= either a single ship number or a fleet designation.
+
+   Note that <FLEET> specifications may have an optional ?cond&cond...   argu-
+   ment like that used for <SECTS> arguments.  For instance:
+      [##:##] Command : ship ~ ?des=d&mil>5
+   will  list all destroyers that have more than 5 military which are not cur-
+   rently in any fleet.
+
+The output from commands may also be sent to a file or another process by uti-
+lizing these alternate syntaxes:
+
+   [##:##] Command : VERB ARG1 ... > FILE
+which sends the output to the file "FILE".
+
+   [##:##] Command : VERB ARG1 ... >> FILE
+which appends the output to the file "FILE".
+
+   [##:##] Command : VERB ARG1 ... >! FILE
+which sends the output to the file "FILE", replacing the file it if it already
+exists.
+
+   [##:##] Command : VERB ARG ... | PROGRAM [ARGS...]
+which send the output of the command to the program  "PROGRAM"  with  optional
+arguments  "ARGS".   This  is most useful when "PROGRAM" is some type of pager
+like more(1) or less(1).
+
+The Empire shell also recognizes a few control characters:
+
+     name  meaning
+interrupt  Abort command and return to Empire command level
+     quit  Exit Empire
+      EOT  Exit Empire
+
+SEE ALSO
+   realm, Moving, Selector, Playing
+

@@ -1,0 +1,16 @@
+                               Command : DISARM
+
+NAME
+   disarm - Remove a nuclear warhead from a plane or missile
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : disarm <PLANE>
+
+The  "disarm"  command  removes nuclear warheads from delivery systems such as
+planes or missiles.
+
+SEE ALSO
+   arm, transport, Planes, Moving
+

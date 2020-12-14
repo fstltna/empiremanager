@@ -1,0 +1,28 @@
+                               Command : RANGE
+
+NAME
+   range - Edit the range of a plane
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : range <PLANES> <range-limit>
+
+The  "range"  command is used to limit the maximum range of individual planes.
+This can be useful in setting up high tech interceptors (planes,  ABMs,  SAMs,
+etc.) to cover only a small limited area.
+
+Note  that  missiles  always fly at double range (since they don't need to fly
+back), so you should cut the desired range in half before using the range com-
+mand.
+
+For  example,  if  plane  1  were a plane and you wanted to limit its reaction
+radius to 6, then you would type:
+   [##:##] Command : range 1 6
+and if plane 2 were a missile and you wanted to limit its reaction  radius  to
+6, then you would type:
+   [##:##] Command : range 2 3
+
+SEE ALSO
+   Planes
+

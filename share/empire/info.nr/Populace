@@ -1,0 +1,21 @@
+                              Subject : POPULACE
+
+   Citizens *   Work, starvation, and general management of your citizens
+       Food     How much people eat at the update
+  Guerrilla     Guerrilla warfare
+     Plague     The Plague
+      Sheep     Ovis aries
+
+       anti *   anti-terrorist actions
+     census *   Report contents of sectors
+    convert *   Change conquered civilians into uncompensated workers
+ demobilize *   Change military into civilians
+     enlist *   Turn civilians into military
+    explore *   Claim unowned land
+      shoot *   Dispose of enemy civilians or uncompensated workers
+ starvation *   Find out who's going to starve
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

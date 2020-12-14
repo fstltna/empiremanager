@@ -1,0 +1,37 @@
+                               Command : FLASH
+
+NAME
+   flash - Send a message directly to a friend's terminal
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : flash <CNUM/CNAME> [<MESSAGE>]
+
+The  <CNUM/CNAME>  argument  is  either  the  number  or name of the recipient
+nation.
+
+flash allows instant communication between friendly nations.   flash  has  two
+different syntaxes.  You can either send your friend a one line message as in:
+   [##:##] Command : flash Foobots Hi there, I'm back from lunch
+
+Or you can send a multi-line message:
+   [##:##] Command : flash Foobots
+
+   > Hi there.
+   > I ate Fodderland for lunch.
+   > .
+
+You can end a multi-line flash with a '.' (period) on a line all by itself.
+
+If  you  do not wish to receive any flash messages from your friends, then you
+can temporarily turn the feature off by typing "toggle flash".
+
+Note that if the person you are  flashing  is  allied  to  you,  you  will  be
+informed  if  they are not logged in or not accepting flashes when you attempt
+to flash them.  This only works when *they* are allied  with  you,  since  you
+would normally see them logged in or not using "players"
+
+SEE ALSO
+   toggle, wall, declare, players, telegram, Communication
+

@@ -1,0 +1,27 @@
+                               Command : SCRAP
+
+NAME
+   scrap - Scrap a ship, plane, or land unit
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : scrap <s|l|p> <SHIPS | UNITS | PLANES>
+
+This  command  allows  you to scrap planes/units/ships when you no longer need
+them.
+
+Ships may only be scrapped in own or friendly 60% harbors.  Planes may only be
+scrapped  in  own or allied 60% airfields.  Land units may only be scrapped in
+own or allied sectors.
+
+When scrapping a unit, plane or ship, you receive materials equal to  2/3  the
+amount  used to build it. The materials are put in the sector where the scrap-
+ping occurs.
+
+If you scrap a ship or unit that has planes  on  board,  the  planes  will  be
+transferred to the sector.
+
+SEE ALSO
+   scuttle, build, ship, land, plane, Ships, Planes, LandUnits
+

@@ -1,0 +1,29 @@
+                              Subject : UPDATES
+
+       Education     How Education is calculated at the update
+            Food     How much people eat at the update
+       Guerrilla     Guerrilla warfare
+       Happiness     How happiness is calculated at the update
+     Maintenance     The cost to maintain ships, planes, and land units.
+          Plague     The Plague
+        Products *   Formulas for the production of commodities
+        Research     How Research level is calculated each update
+           Taxes     How taxes are calculated
+      Technology     How technology level is calculated each update
+ Update-sequence     The order of events at the update
+
+          budget *   Look at a national balance sheet
+          neweff      Find  out  what the efficiency of a sector will be after
+                     the next update
+      production *   Predicts production of sectors at the next update
+            show *   Characteristics of sectors, units, updates and more
+           start     Resume production and repairs
+      starvation *   Find out who's going to starve
+            stop     Stop production and repairs
+          update +   Find out when the next update will be
+           zdone     Indicate willingness to have an update
+
+For info on a particular topic, type "info <topic>" where <topic>  is  one  of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.  Topics marked by + are obsolete.
+

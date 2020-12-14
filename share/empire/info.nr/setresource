@@ -1,0 +1,16 @@
+                            Command : SETRESOURCE
+
+NAME
+   setresource - Change resources of a sector
+
+Level: Obsolete
+
+SYNTAX
+   [##:##] Command : setresource <TYPE> <SECTS> <NUM>
+
+This  command  is  obsolete  and will go away in a future version.  Use "edit"
+instead.
+
+SEE ALSO
+   swapsector, give, Deity
+

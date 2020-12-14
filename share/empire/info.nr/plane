@@ -1,0 +1,39 @@
+                               Command : PLANE
+
+NAME
+   plane - Report status of planes
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : plane <PLANES>
+
+The plane report command is a census of your planes and lists.  For example:
+   [##:##] Command : plane *
+
+      #    type                x,y    w   eff  mu def tech ran hard carry special
+      0 f2  P-51 Mustang       1,-1      100%  90   5  110  11    0
+      1 f2  P-51 Mustang       1,-1      100%  90   5  110  11    0
+      3 lb  TBD-1 Devastato    1,-1      100%  90   4  120  11    0
+   3 planes
+
+The report format contains the following fields:
+
+       #  the plane number
+    type  the type of plane; "fighter 1", "jet hvy bomber", etc.,
+     x,y  the plane's current location,
+       w  the "air wing" designation letter (set by "wingadd" command),
+     eff  the plane's efficiency, prefixed by "!" if stopped,
+      mu  the number of mobility points the plane has,
+     def  the defense value of the plane (for air-to-air combat)
+    tech  the tech level at which it was created,
+   range  and the range (in sectors) it can fly in one sortie,
+   carry  the ship or land unit the carrying the plane, if any,
+ special  shows  "orbit"  or  "geosync"  for  satellites  in (geo-synchronous)
+          orbit, else nuclear armament  type  and  programming  ("A"  for  air
+          burst, "G" for ground burst; see info "arm").
+
+SEE ALSO
+   pstat,  upgrade,  arm,  bomb,  build,  drop,  fly, launch, paradrop, recon,
+satellite, scrap, wingadd, Planes
+

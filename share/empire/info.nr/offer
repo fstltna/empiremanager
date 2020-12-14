@@ -1,0 +1,35 @@
+                               Command : OFFER
+
+NAME
+   offer - Offer a loan to another country
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : offer loan <CNUM/CNAME> <AMOUNT> <DURATION> <RATE>
+
+The offer command is used to offer a loan to another country.
+
+<CNUM/CNAME> is the number or name of the country to whom you are offering the
+loan,
+
+<AMOUNT> is the size of the loan.  (NOTE: do not use a dollar sign),
+
+<DURATION> is the length of the loan in days,
+
+<RATE> is the interest rate, (per <DURATION>), on the loan.
+
+The program prompts with various questions concerning any terms  of  the  loan
+not provided on the command line and sends a telegram to <CNUM/CNAME> announc-
+ing the loan offer.
+
+If the other country accepts the loan, (using  the  "consider"  command),  the
+money  will be transferred from your account and you will be notified that the
+loan duration has started.
+
+Note that the dependence of rate on the duration makes a 30 day loan at 10%  a
+worse deal than a 60 day loan at 15%.
+
+SEE ALSO
+   collect, consider, ledger, repay, Loans
+

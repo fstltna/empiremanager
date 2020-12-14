@@ -1,0 +1,17 @@
+                           Subject : TRANSPORTATION
+
+     Mobility     How much mobility stuff costs
+       Moving *   A quick reference for moving things around
+ Sector-types *!  Description of different sector types
+
+          fly *   Fly planes from sector/ship to sector/ship and bomb or snoop
+        march *   Move a land unit or units
+         move *   Transport ore, civilians, guns, etc
+     navigate *   Move ship or fleet around
+         test     Check the effect of a proposed move
+    transport *   Move planes or nuclear devices around
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.  Topics with unusually long info are marked with a !.
+

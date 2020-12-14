@@ -1,0 +1,59 @@
+                              Concept : Populace
+
+NAME
+   Citizens - Work, starvation, and general management of your citizens
+
+Level: Basic
+
+Taxation of the civilian populace is one of the main providers of income to an
+Empire nation (gold bars in banks, trade ships, and taxes from uws  being  the
+only  other sources of income in the game).  Also, only friendly civilians can
+be enlisted into the army, navy and air force.
+
+The willingness of the civilian population to work is initially 100%  --  that
+is,  all  of  the  people are working. In the event that the sector starves or
+falls victim  to  revolutionary  subversion,  the  work  of  the  sector  will
+decrease.  This will be shown by the work % decreasing. During the update, the
+work % is influenced by the loyalty of the sector.
+
+If people starve in a sector, the amount of work they do drops to  0  (because
+they are too weak to work).
+
+The loyalty of a sector is a hidden value, which represents how loyal the cit-
+izens in the sector are to your country. Initially the disloyalty is set to 0.
+When  a sector is captured the disloyalty is set to 50. Besides from influenc-
+ing the work % of a sector, the loyalty influences the chances on revolts, che
+in  general  and  whether  civilians  will  report to your army when enlisting
+reserves. Loyalty changes during the update by happiness or lack thereof. When
+retaking  a sector you are the old owner of, the disloyalty in the sector will
+be 0 again. If the people in the sector had to fight for it  themselves  in  a
+revolt,  some  disloyalty  will remain. If the occupation force of a sector is
+too small, or if the sector starves, disloyalty will increase.
+
+If a sector is a conquered sector, the old owner will be shown in  the  appro-
+priate column on the census report.  Friendly sectors allow enlistment of mil-
+itary, as well as the ability to move the civilians  freely  about.   Occupied
+civilians  will  not  move, and friendly civilians cannot enter these sectors.
+In addition, occupied civilians will not serve in the armed forces.
+
+If the thought of not being able to move conquered populace bothers you,  then
+you  have  the  option of converting these conquered people into uncompensated
+workers, involving the expenditure of BTUs and money (for the paperwork).   If
+all  the conquered people in one sector are converted to uw's, then the sector
+is then marked as yours.
+
+If the people in a sector are unhappy (due to starvation, subversion, or  lack
+of  happiness) they can go on strike and cease working.  You can get them back
+to work by heavy-handed military control (placing one  military  for  each  20
+striking civilians).
+
+Finally,  your  populace  requires happiness to keep their enthusiasm for work
+going.  As technology and education increase, your work force expects to share
+in  the increased levels by getting more consumer items (VCRs, BMWs, etc) rep-
+resented by happy strollers.  If you don't have at least one  happiness  point
+per  two  units  of  education, and a point for each forty units of tech, your
+people will not be happy.
+
+SEE ALSO
+   attack, Happiness, Populace, Occupation
+

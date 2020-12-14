@@ -1,0 +1,13 @@
+                                Command : PEEK
+
+NAME
+   peek - Display some deity-only statistics for sectors
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : peek <SECTS>
+
+SEE ALSO
+   Deity
+

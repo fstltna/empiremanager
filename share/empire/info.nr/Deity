@@ -1,0 +1,23 @@
+                               Subject : DEITY
+
+         add     Add/Remove a country in the game
+     disable     Disable Updates
+        edit     Edit sectors, ships, planes, land units, nukes or countries
+      enable     Enable updates
+       force     Force an update
+        give     Give(take) Commodities
+      newcap     Place a pair of sanctuaries
+        peek     Display some deity-only statistics for sectors
+     players     List players currently connected to the game
+      reload     Reload server configuration and reopen log files
+ setresource +   Change resources of a sector
+   setsector +   Change stats of a sector
+    shutdown     Shut down the server
+  swapsector     Swap two sectors
+        turn     Turn game on or off, or change the login message
+
+         God     Tips on being God
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by + are obsolete.
+

@@ -1,0 +1,21 @@
+                                Command : ADD
+
+NAME
+   add - Add/Remove a country in the game
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : add <NAT> <NAME> <REP> <visitor|player|god|delete>
+
+   [##:##] Command : add 1 bunky mypass p
+This  adds a new player country to the game.  Use "newcap" to create its sanc-
+tuary.
+   [##:##] Command : add 2 visitor visitor v
+This adds a visitor country to the game.
+   [##:##] Command : add 1 bunky mypass d
+This removes bunky from the game.
+
+SEE ALSO
+   newcap, Deity
+

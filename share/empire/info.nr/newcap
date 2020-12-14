@@ -1,0 +1,13 @@
+                               Command : NEWCAP
+
+NAME
+   newcap - Place a pair of sanctuaries
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : newcap <NAT> <SECTOR>
+
+SEE ALSO
+   add, Deity
+

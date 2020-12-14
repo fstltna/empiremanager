@@ -1,0 +1,56 @@
+                               Command : SWEEP
+
+NAME
+   sweep - Use planes to remove mines from sea sectors
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : sweep <PLANES> <ESCORTS> <SECT> route|destination
+
+The  "sweep"  command  is  used  to sweep sea mines from the sectors along the
+route.
+
+<PLANES> represents a list of planes which are to  perform  the  mine-sweeping
+mission.   Only planes with capability sweep and sufficient mobility, based in
+a sector stocked with petrol, will be successfully selected for the mission.
+
+<ESCORTS> represent a list of fighter planes which are  capable  of  escorting
+the  transports  all the way to the target.  To be selected, escorts must have
+fuel and mobility.
+
+<SECT> represents an assembly point, where all of the planes  in  the  mission
+meet  before  proceeding  on to the target sector.  The assembly point must be
+owned by you or an ally, or you or an ally must have a ship  there.   It  must
+not  be  more  than  four sectors away from any of the planes selected for the
+mission.
+
+Route is a normal empire path specification. You may also give  a  destination
+sector  on the command line, or at any time while giving the route, and empire
+will use the best path from the current sector to the desired destination sec-
+tor.
+
+When  getting  a  path interactively, empire will show you the information you
+have (from your bmap) concerning the current area, to help plot your course.
+
+Information given by sweep/recon is not totally accurate.
+
+Sweep missions can be intercepted just  like  any  other  mission.   See  info
+"Intercept".
+
+If  the  destination  sector is not an airport, then all planes in the mission
+must have V/STOL capability.
+
+Planes will automatically attempt to sweep sea mines in sea sectors they over-
+fly.   Their  chance  of sweeping is (100-acc), and they can only sweep 1 mine
+per overflight of the sector.
+
+The planes will additionally gather intelligence, just like they do on a recon
+mission.  See info "recon".
+
+Note  that  a  plane  must  be  at least 40% efficient before it can leave the
+ground.
+
+SEE ALSO
+   Plane-types, bomb, fly, paradrop, drop, recon, Planes
+

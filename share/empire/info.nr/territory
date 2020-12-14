@@ -1,0 +1,44 @@
+                             Command : TERRITORY
+
+NAME
+   territory - Assign various sectors to a specific territory
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : territory <SECTS> <NUMBER> [<FIELD>]
+
+In  Empire,  sectors may be given a territory number.  This number may be used
+in conditional statements as in:
+   [##:##] Command : census # ?terr=27
+The program will then give you a census report for all the sectors  that  have
+been assigned the territory number "27".
+
+In  this  sense  it  is essentially an extended "realm".  However, you are not
+limited to rectangular regions and you have 99 values to choose from.
+
+There are four independent territory fields terr, terr1, terr2, terr3 selected
+by  field  arguments  0, 1, 2, 3, respectively.  Deities can use an additional
+territory field dterr, selected by -1.  If  the  optional  field  argument  is
+empty, terr is assumed for mortals and dterr for deities.
+
+   [##:##] Command : territory #1 5 1
+
+Would set terr1 to 5 for all sectors in realm 1.
+
+   [##:##] Command : sect * ?terr1=6&terr2=12
+
+If  terr1 was used to mark different islands and terr2=12 indicated productive
+sectors, this would highlight all the productive sectors on island number 6.
+
+Some possible uses include; all sectors distributing to a  particular  sector;
+all coastal sectors; all sectors that have armed missiles in them.  And proba-
+bly thousands that I haven't thought of. ;-)
+
+To "unset" a territory, set its value to zero.
+
+Note: terr and terr0 are the same.
+
+SEE ALSO
+   realm, distribute, Sectors
+

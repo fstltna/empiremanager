@@ -1,0 +1,16 @@
+                           Info : List of Subjects
+
+Empire info is available on the following subjects:
+
+     Combat                   Introduction             Playing
+     Commerce                 LandUnits                Populace
+     Commodities              Loans                    Producing
+     Communication            Maps                     Sectors
+     Deity                    Nations                  Server
+     Detection                Nukes                    Ships
+     Diplomacy                Occupation               Transportation
+     Distribution             Planes                   Updates
+
+Type  "info  <Subject>"  where  <Subject> is one of the subjects listed above.
+For a complete list of all info topics, type "info all".
+

@@ -1,0 +1,30 @@
+                                Command : WALL
+
+NAME
+   wall - Send a message directly to all allies terminals
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : wall [<MESSAGE>]
+
+The  wall command allows instant communication between allied nations.  It may
+be called in two different ways.  You can either send your  ally  a  one  line
+message as in:
+   [##:##] Command : wall Hi there, I'm back from lunch
+
+Or you can send a multi-line message:
+   [##:##] Command : wall
+
+   > Everyone ready?
+   > OK, let's hit the beaches!
+   > .
+
+You can end a multi-line flash with a '.' (period) on a line all by itself.
+
+If  you  do  not wish to receive any broadcast messages from your allies, then
+you can temporarily turn the feature off by typing "toggle flash".
+
+SEE ALSO
+   flash, declare, telegram, Communication
+

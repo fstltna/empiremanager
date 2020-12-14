@@ -1,0 +1,12 @@
+                              Subject : COMMERCE
+
+    buy     Purchase commodities from the world market
+ market     Report current selling prices in the world market
+  reset     Reset the price of a product on the market
+   sell     Sell commodities on the world market
+    set     Establish price for a ship, plane, land unit or nuke
+  trade     Buy ships, planes, land units or nukes
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.
+

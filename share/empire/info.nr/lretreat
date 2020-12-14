@@ -1,0 +1,80 @@
+                              Command : LRETREAT
+
+NAME
+   lretreat - Set retreat conditions/paths for units or armies
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : lretreat <UNIT/ARMY> <PATH> <CONDITIONS>
+
+SYNTAX
+   [##:##] Command : lretreat <UNIT/ARMY> q
+
+The  lretreat  command  allows  you to examine or modify the retreat orders of
+your land units.
+
+The first argument selects land units to view or give orders for.  If an  army
+designation  is  given when specifying orders, the orders apply to all members
+of that army.
+
+Retreat orders consist of a retreat path and conditions.
+
+A retreat path 'h' orders the ships not to retreat.
+
+With 'q' instead of a retreat path, the current retreat paths  and  conditions
+will be listed.  The report format contains the following fields:
+
+     lnd#  the unit number
+unit type  the type of land unit; "cavalry", "engineer", etc.,
+      x,y  the land unit's current location,
+        a  the army designation letter (set by "army" command),
+     path  the current retreat path,
+ as army?  whether these are army retreat orders,
+    flags  what conditions will trigger retreat.
+
+For example:
+   [##:##] Command : lretreat * q
+
+   lnd#     unit type       x,y   ar path       as army? flags
+      0 cav  cavalry        2,0      jjuuj               I
+   1 unit
+
+A  player  may give retreat orders for a land unit or an army.  Retreat orders
+include a set of conditions that determine when the  army/unit  will  retreat,
+and a path that the army/unit will follow.  When a condition is met for a par-
+ticular land unit, the "as army?" field is checked. If it is Yes,  then  every
+unit  in that army with army retreat orders retreats along the specified path.
+If it is no, then the retreat orders apply to that unit only,  and  only  that
+unit retreats.
+
+When  a  land  unit is added to an army, it is given the retreat orders of the
+first unit in that army that has army retreat orders and is in the  same  sec-
+tor, if any exist.
+
+Retreat orders are wiped when a land unit marches.
+
+Retreat conditions are:
+
+        Condition       Meaning
+        i               Retreat when the unit is injured,
+                        i.e. whenever the unit is damaged by gun fire
+                        or bombs.
+        b               Retreat when a plane bombs or tries to bomb
+                        the unit.
+        h               Retreat when helpless --- a unit is helpless
+                        when it is fired upon, and no friendly
+                        units/sectors (including the unit itself)
+                        are able to fire back at the aggressor.
+
+For  example, if the cavalry above was fired at, it would attempt to retreat 2
+sectors, jj, using the normal amount of mobility  for  moving  2  sectors.  It
+would then look like:
+
+   lnd#     unit type       x,y   ar path       as army? flags
+      0 cav  cavalry        2,0      uuj                 I
+   1 unit
+
+SEE ALSO
+   land, army, LandUnits
+

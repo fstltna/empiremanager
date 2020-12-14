@@ -1,0 +1,48 @@
+                             Command : THRESHOLD
+
+NAME
+   threshold - Set commodity distribution thresholds
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : threshold <ITEM> <SECTS> <THRESH>
+
+The  threshold command is used to specify the level of a given commodity which
+is to be maintained by the sector's distribution  sector.   These  levels  are
+maintained by either importing or exporting commodities.  This importation and
+exportation is done automatically during an update.  It uses much less  mobil-
+ity than manual moves.  See "info Mobility" for details.
+
+In  the syntax, <SECTS> is the sector or sectors from which the deliveries are
+made, <ITEM> is one of the following:
+
+   c       civilians
+   m       military
+   u       uncompensated workers
+   f       food
+   s       shells
+   g       guns
+   p       planes
+   i       iron ore
+   d       gold dust
+   b       bars of gold
+   o       oil
+   l       light construction materials
+   h       heavy construction materials
+   r       radioactive materials
+
+and <THRESH> is a number specifying the level of commodity which is desired.
+
+The census and commodity reports will indicate distribution thresholds by  the
+"hundreds  digit"  of  the threshold level.  In order to have a threshold take
+effect, it must be at least one.
+
+Sectors importing or exporting items  can  be  seen  by  the  "route"  command
+(marked with a "$") or by the sect command.
+
+Also, note that no distribution center will ship out its last civilian.
+
+SEE ALSO
+   distribute, census, commodity, route, level, Distribution
+

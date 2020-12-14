@@ -1,0 +1,21 @@
+                              Subject : NATIONS
+
+  Education     How Education is calculated at the update
+  Happiness     How happiness is calculated at the update
+   Research     How Research level is calculated each update
+      Taxes     How taxes are calculated
+ Technology     How technology level is calculated each update
+
+      break *   Break sanctuary and begin to play
+     budget *   Look at a national balance sheet
+    capital *   Change the location of your capital
+     change     Change country name or representative's name
+     nation *   The state of your nation
+    players     List players currently connected to the game
+      power *   Display arbitrarily measured strengths of countries
+     report *   List all countries and their status
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

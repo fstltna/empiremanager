@@ -1,0 +1,27 @@
+                              Command : DISABLE
+
+NAME
+   disable - Disable Updates
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : disable
+
+No  updates  will  fire  if you disable them.  The "show updates" command will
+report the fact.
+
+Disabling updates this way does not stop the Empire clock.   Stuff  using  the
+clock,  like  BTU  growth,  continues  normally.  Should a scheduled update be
+actually missed, however, the  Empire  clock  automatically  recalibrates,  to
+maintain the fixed number of ETUs between updates.  This effectively stops the
+clock.
+
+You should not use this command as a tool for implementing your update  sched-
+ule!   Enabling and disabling updates by hand is far too error prone, and your
+players can't trust the show command to find out when the next  update  really
+is.  Use the update schedule file instead.
+
+SEE ALSO
+   disable, show, Time, Deity
+

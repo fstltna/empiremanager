@@ -1,0 +1,47 @@
+                               Subject : SHIPS
+
+ Maintenance     The cost to maintain ships, planes, and land units.
+    Mobility     How much mobility stuff costs
+  Ship-types *!  Description of different types of ships.
+ Trade-ships *   How to use trade ships
+
+     assault *   Attack coastal sector from ship
+       board *   Board enemy ship
+       build *   Build ships, planes, land units, nuclear weapons or bridges
+       cargo *   List the commodities on board your ships
+  coastwatch *   Check from sectors for nearby ships
+        fire *   Fire artillery from sector/ship/unit on sector/ship
+    fleetadd     Designate members of a "fleet"
+        load *   Load goods, people, etc onto a ship
+     lookout *   Check from ships for other ships and/or sector types
+        lost *   Report lost items
+       ltend     Transfer things between a unit and the ship carrying it
+        mine *   Drop sea mines from a ship
+     mission *   Assign a mission to a ship/plane/unit
+        name     Give a name to a ship
+    navigate *   Move ship or fleet around
+      payoff     Find out the current payoff of a trade ship
+       radar *   Perform radar scan from ship or sector
+     retreat     Set retreat conditions/paths for ships or fleets
+       sbmap *   Big map of all your worldly knowledge around a ship
+       scrap *   Scrap a ship, plane, or land unit
+     scuttle *   Destroy a ship, plane, or unit
+       sdump     Dump raw ship information
+        ship *   Report status of ships
+        show *   Characteristics of sectors, units, updates and more
+        smap *   Get a map around a ship
+       sonar *   Use sonar to look for ships
+       sstat *   Report statistics of ship, fleet or ships in a given area
+       start     Resume production and repairs
+        stop     Stop production and repairs
+        tend *   Transfer commodities between ships
+     torpedo *   Slip a torpedo to some poor sucker (from a sub or ship)
+      unload *   Inverse of load (above)
+     upgrade      Update  the  tech  of  a ship/unit/plane to the current tech
+                 level
+       xdump     Extended dump of everything under the sun
+
+For info on a particular topic, type "info <topic>" where <topic>  is  one  of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.  Topics with unusually long info are marked with a !.
+

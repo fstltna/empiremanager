@@ -1,0 +1,32 @@
+                               Command : MORALE
+
+NAME
+   morale - Change the retreat percentage of a unit
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : morale <UNITS> <retreat percentage>
+
+The "morale" command is used to set the retreat percentage of land units.
+
+Whenever  a  land  unit  takes  a  hit  in combat, it may break off combat and
+attempt to retreat.  This is called "failing a morale check".  The chance  for
+it to happen is unit's retreat percentage - efficiency.
+
+The  morale  command  allows you to adjust this percentage within a range. If,
+for example, you wish only to trade space for time, you could set the  retreat
+percentage  to  100%,  meaning  that your units would retreat often, but would
+still slow the enemy down a bit. Or, you could set your retreat percentage  to
+the minimum, and make the unit stick around and fight more, but at the cost of
+more casualties.
+
+The maximum allowed value is 100%.  The minimum value is based on happiness:
+   (morale_base) - happiness
+
+"morale_base" is a deity settable variable, which defaults to 42.  When a unit
+is first built, its retreat percentage is set to "morale_base".
+
+SEE ALSO
+   attack, assault, LandUnits
+

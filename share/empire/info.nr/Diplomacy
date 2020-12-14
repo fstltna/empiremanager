@@ -1,0 +1,16 @@
+                             Subject : DIPLOMACY
+
+   Fallout     The long lasting effects of nuclear war
+
+    accept     Find out who's accepting what communications from whom
+   declare *   Formally declare alliance, friendly, neutrality, hostile or war
+     power *   Display arbitrarily measured strengths of countries
+    reject     Stop/start listening to other countries
+ relations *   Shows diplomatic relations between countries
+    report *   List all countries and their status
+  telegram *   Send "diplomatic" communique to another country
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

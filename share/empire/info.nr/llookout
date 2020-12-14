@@ -1,0 +1,39 @@
+                              Command : LLOOKOUT
+
+NAME
+   llookout - Check from units for other units, planes and/or sector types
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : lookout <UNIT/ARMY>
+
+The  lookout  command allows units to report sightings of other units, planes,
+and land sectors.
+
+Note that non-spy units require military on-board in order to be able  to  see
+anything.
+
+The various ranges over which lookout is effective break down into two groups:
+
+UNIT to UNIT
+
+  This  range  is  dependent on both the visibility of the unit being observed
+  and the visual range of the observing unit.  (see "info Unit-types")
+
+UNIT to PLANE
+
+  Planes are treated as if they had a visibility of 10.
+
+For example:
+   [##:##] Command : lookout 24
+
+   Groonland (#2) jf4 jet fighter 4 #3 @2,-2
+   Groonland (#2) airfield 100% efficient with approx 50 civ @ 2,-2
+   Groonland (#2) highway 20% efficient with approx 20 civ @ 3,-1
+   Groonland (#2) highway 0% efficient with approx 0 civ @ 0,-2
+
+SEE ALSO
+   lookout, coastwatch, Unit-types,  Sector-types,  radar,  sonar,  LandUnits,
+Detection
+

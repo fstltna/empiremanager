@@ -1,0 +1,26 @@
+                              Command : SCUTTLE
+
+NAME
+   scuttle - Destroy a ship, plane, or unit
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : scuttle <s|l|p> <SHIPS | UNITS | PLANES>
+
+This  command allows you to destroy planes/units/ships when you no longer need
+them.
+
+Planes, units, and ships may be scuttled in any sector.
+
+If you scuttle a ship or unit that has planes on board, the planes will either
+be transferred to land (if a unit, or if the ship is in a harbor), or will die
+(if the ship is elsewhere)
+
+Units on ships may not be scuttled.
+
+Scuttling trade-ships has other effects.  See info Trade-ships.
+
+SEE ALSO
+   scrap, Trade-ships, build, ship, plane, land, Ships, Planes, LandUnits
+

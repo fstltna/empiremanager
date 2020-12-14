@@ -1,0 +1,26 @@
+                                Command : ARM
+
+NAME
+   arm - Load nuclear weapons onto planes or missiles
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : arm <PLANE> <NUKE> <airburst?>
+
+The "arm" command loads nuclear devices aboard delivery systems such as planes
+or missiles.
+
+No nuclear weapons can be delivered unless they are first loaded aboard deliv-
+ery  vehicles.   However,  until they are residing in a plane or missile, they
+are considered invulnerable to attack (buried inside of mountains), and cannot
+be used by any potential conqueror (they don't know the fail-safe codes).
+
+You  decide whether the warhead will air-burst or ground-burst at the time you
+arm it.  If you'd like to change air-burst/ground-burst later on, just arm the
+plane/missile  again (in this case, the second argument will be ignored).  You
+can see whether a nuke will air- or ground-burst using the "plane" command.
+
+SEE ALSO
+   disarm, plane, build, transport, launch, Damage, Planes, Nukes, Moving
+

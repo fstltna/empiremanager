@@ -1,0 +1,16 @@
+                                Command : NAME
+
+NAME
+   name - Give a name to a ship
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : name <SHIPS> <NAME>
+
+The  "name" command allows individual ships to be give names. A name of "~" is
+used to remove the name.
+
+SEE ALSO
+   Ships
+

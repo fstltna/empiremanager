@@ -1,0 +1,51 @@
+                             Command : TRANSPORT
+
+NAME
+   transport - Move planes or nuclear devices around
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : transport plane <PLANES> <ROUTE|DESTINATION>
+
+SYNTAX
+   [##:##] Command : transport nuke <NUKES> <ROUTE|DESTINATION>
+
+The transport command is used to move planes and nuclear devices from one sec-
+tor to another, along the ground.
+
+<ROUTE> is a normal empire path specification. You may also give  a  <DESTINA-
+TION>  sector  on the command line, or at any time while giving the route, and
+empire will use the cheapest path (in terms of mobility) from the current sec-
+tor to the destination sector.
+
+You would move nuke #666 to 8,0 as follows:
+   [##:##] Command : transport nuke 666 8,0
+
+You could move all planes in wing d to -6,0 as follows:
+   [##:##] Command : transport plane d -6,0
+
+The  "map"  command will give you a map surrounding the current position.  You
+can also supply additional parameters:
+   [##:##] Command : <32.3: g 6,2> m 3 ls
+
+is equivalent to a "pmap" command when transporting planes, like this:
+   [##:##] Command : pmap 3 ls
+
+or it is equivalent to a "nmap" command when transporting nukes.
+
+Note that while transporting, you may run into any  landmines  the  enemy  has
+left  in  your  sectors.  In that case, the planes being transported will take
+damage. See info "lmine" for details.
+
+Also, if your enemy has any units on interdiction  mission,  then  the  planes
+you're transporting may get hit by them.
+
+Nuclear  warheads  are transported in heavily armoured vehicles and are immune
+to land mines and interdiction.
+
+See info "Mobility" for the mobility cost to transport planes and nukes.
+
+SEE ALSO
+   arm, move, navigate, nuke, Mobility, Planes, Nukes, Transportation, Moving
+

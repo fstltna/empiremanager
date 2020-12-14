@@ -1,0 +1,71 @@
+                             Command : STARVATION
+
+NAME
+   starvation - Find out who's going to starve
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : starvation [<SECTS>|l <UNITS>|s <SHIPS>]
+
+The  starvation command warns you of possible starvation in your sectors, land
+units, and ships.
+
+SYNTAX
+   [##:##] Command : starv
+
+With no arguments, the starvation command will list all of your sectors,  land
+units, and ships that will starve at the update.
+
+SYNTAX
+   [##:##] Command : starv <SECTS>
+
+With  this syntax, the starvation command displays all sectors in <SECTS> that
+currently do not have enough food. It does not  take  into  account  emergency
+food  growing.  It also does not worry about feeding babies... it merely check
+for starvation. If you want population increase, you'll need to chuck in  some
+extra food...
+
+For example:
+   [##:##] Command : starv #0
+
+   Mon Aug 28 04:53:38 1995
+   Starvation
+     sect         eff
+      4,0    +    100% will starve 125 people. 15 more food needed
+   1 sector
+
+SYNTAX
+   [##:##] Command : starv l <UNITS>
+
+With  this  syntax,  the  starvation command will list which of your units are
+currently not carrying enough food (see "info lload" and "info supply").   For
+example:
+   [##:##] Command : starv l *
+
+   Mon Aug 28 04:53:05 1995
+   Starvation
+    lnd#     unit type
+       6 cavalry           will starve 9 mil. 1 more food needed
+       7 cavalry           will starve 13 mil. 2 more food needed
+   2 units
+
+SYNTAX
+   [##:##] Command : starv s <SHIPS>
+
+With  this  syntax,  the  starvation command will list which of your ships are
+currently not carrying enough food to feed the people on them.  For example:
+   [##:##] Command : starv s * ?type=frigate
+
+   Mon Aug 28 04:53:29 1995
+   Starvation
+    shp#     ship type
+       0 frigate           will starve 10 people. 2 more food needed
+   1 ship
+
+To see how much food your people need to eat, check the output of the  version
+command.
+
+SEE ALSO
+   census, version, Populace, Updates
+

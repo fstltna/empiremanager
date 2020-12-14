@@ -1,0 +1,16 @@
+                               Command : RELOAD
+
+NAME
+   reload - Reload server configuration and reopen log files
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : reload
+
+Reload  server  configuration  and  reopen  log files.  This allows proper log
+rotation.  Only the update schedule is reloaded at this time.
+
+SEE ALSO
+   enable, disable, force, shutdown, Deity
+

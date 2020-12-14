@@ -1,0 +1,31 @@
+                              Command : APROPOS
+
+NAME
+   apropos - Searches info pages for information on a topic
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : apropos <searchword> [maxhits]
+
+The  Empire  info  pages are organized by subject. It can sometimes be hard to
+find the exact page with the information in which you are interested.  To  get
+a list of subjects containing the word you are looking for, type:
+   [##:##] Command : apropos <word>
+
+without the < and > brackets.
+
+You can then type:
+   [##:##] Command : apropos bridge
+to  get  a  list  of  Empire  commands  and info topics which contain the word
+bridge, as well as the line that mentions it.
+
+Apropos is not case sensitive, thus the above example  will  find  pages  with
+Bridge or bridge (or even bRiDgE).
+
+By  default, apropos exits when 100 hits are found.  You can change this value
+with an optional second parameter.
+
+SEE ALSO
+   info, Playing
+

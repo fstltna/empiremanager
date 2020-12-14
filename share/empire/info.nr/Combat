@@ -1,0 +1,24 @@
+                               Subject : COMBAT
+
+ Attacking !   Details for attack, assault, paradrop, board and lboard
+    Damage     How much damage stuff does
+   Fallout     The long lasting effects of nuclear war
+      Flak *   How flak works
+ Hitchance     The chance of a projectile hitting its target
+
+   assault *   Attack coastal sector from ship
+    attack *   Sector vs. sector combat
+     board *   Board enemy ship
+      bomb *   Dispose of inconvenient enemy assets with air power.
+      fire *   Fire artillery from sector/ship/unit on sector/ship
+    lboard *   Board enemy land unit
+  paradrop     Attack a sector from the air
+    pboard *   Board enemy plane
+       spy *   Snoop on adjacent enemy sectors
+  strength     Report defensive strengths of sectors
+   torpedo *   Slip a torpedo to some poor sucker (from a sub or ship)
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.  Topics with unusually long info are marked with a !.
+

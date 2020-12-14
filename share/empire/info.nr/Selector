@@ -1,0 +1,205 @@
+                       Concept : Conditional Selectors
+
+NAME
+   Selector - Selectors you can use in Empire conditionals
+
+Level: Basic
+
+This  is  a complete list of all selectors you can use in Empire conditionals.
+A selector is for example "mil" in the following command:
+   [##:##] Command : cen * ?mil>10
+Most selectors are self-explanitory, so definitions will only be  given  where
+necessary.
+
+Commodities:
+    civil
+    milit
+    shell
+      gun
+   petrol
+     iron
+     dust  gold dust
+      bar  bars of gold
+     food
+      oil
+      lcm  light construction materials
+      hcm  heavy construction materials
+       uw  uncompensated workers
+      rad  radioactive materials
+
+Sector:
+     xloc
+     yloc
+    owner
+      des  designation/infrastructure
+    effic
+    mobil
+     terr  alias for terr0 (mortal player) or dterr (deity)
+    terr0
+    terr1
+    terr2
+    terr3
+    dterr
+timestamp
+  fallout
+     road
+     rail
+   dfense  (this isn't defense or it will conflict with des)
+     work
+  coastal  is a coastal sector
+   newdes  new designation
+      min  mineral resources (iron)
+     gold  gold resources
+     fert  food fertility
+ ocontent  oil content
+     uran  uranium resources
+   oldown  old owner
+      off  whether production is turned off
+    xdist  distribution centre
+    ydist  distribution centre
+    avail  available workforce
+
+Ship, plane, or land unit:
+     xloc  x location
+     yloc  y location
+    owner
+     type  type of unit (e.g. cavalry or frigate)
+    effic
+    mobil
+timestamp
+     tech  tech level the unit was built at
+      uid  unit ID number
+    group  fleet/wing/army
+      opx  mission operations sector
+      opy  mission operations sector
+  mission
+           1 = interdict
+           2 = support
+           3 = reserve
+           4 = escort
+           5 = sub interdiction
+           6 = air defense
+           7 = defense support
+           8 = offense support
+
+Ship:
+    fleet
+   nplane  number of planes the ship is carrying
+  nxlight  number of xlight planes the ship is carrying
+nchoppers  number of helicopters the ship is carrying
+
+Plane:
+     wing
+    range
+     ship  ship the plane is on (-1 = no ship)
+      att
+      def
+   harden
+ nuketype  Type of nuke on the plane (-1 = no nuke, 0..n = index into nuke ta-
+           ble)
+    flags
+     land  land unit the plane is on (-1 = no land unit)
+
+Land Unit:
+      att
+      def
+     army
+     ship  ship the land unit is on (-1 = no land unit)
+   harden  fortification
+  retreat
+     land  number of land units on the unit
+  nxlight  number of xlight planes on the unit
+      vul
+      spd
+      vis
+      spy
+      rad
+      frg
+      acc
+      dam
+     ammo
+      aaf
+ maxlight
+
+Nuke:
+    owner
+      uid
+     xloc
+     yloc
+   number
+    types
+timestamp
+
+           For distribution and delivery selectors, the first  letter  is  the
+           first  letter  of the name of the commodity.  For example, civilian
+           distribution threshold is 'c_dist'.
+
+Distribution:
+   c_dist
+   m_dist
+   u_dist
+   s_dist
+   g_dist
+   p_dist
+   i_dist
+   d_dist
+   b_dist
+   f_dist
+   o_dist
+   l_dist
+   h_dist
+   r_dist
+
+Delivery:
+    c_del
+    m_del
+    u_del
+    s_del
+    g_del
+    p_del
+    i_del
+    d_del
+    b_del
+    f_del
+    o_del
+    l_del
+    h_del
+    r_del
+
+Deity:
+   pstage
+    ptime
+      che
+che_target
+    mines
+
+Loan:
+   loaner
+      uid
+   loanee
+   status
+    irate
+     ldur
+  amtpaid
+   amtdue
+  lastpay
+  duedate
+
+News:
+    actor
+   action
+   victim
+    times  number of times action happened
+     time  time
+
+Lost:
+    owner
+      uid
+     type
+        x
+        y
+timestamp
+
+SEE ALSO
+   Syntax, Playing
+

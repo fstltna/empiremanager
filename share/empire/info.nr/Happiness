@@ -1,0 +1,33 @@
+                             Concept : Happiness
+
+NAME
+   Happiness - How happiness is calculated at the update
+
+Level: Expert
+
+Happiness  is required for countries which have any sort of technology or edu-
+cation at all, with greater levels being  required  as  the  expectation  (and
+tech/edu levels) of the populace increases.  A country with an unhappy popula-
+tion can expect a decrease in the "work" of some sectors.
+
+Also, the morale of your land units is determined by  the  happiness  of  your
+people.  The  morale of a unit can be set by the player, but the minimum level
+allowable depends on happiness.  See "info morale" for details.
+
+The "nation" command will display, among other things, your current  happiness
+level.
+
+The procedure determining happiness level is exactly the same for happiness as
+it is for education (see "info Education") except for the fact that "happiness
+log  base" is always 6.0 and "easy happiness" is always 5.0.  New happiness is
+averaged with old happiness in the same way that education is averaged  except
+that happiness averaging has its own line in the "version" output:
+  Happiness is averaged over 48 time units.
+
+It  has  also  been  rumored  that  increasing happiness will help to keep the
+rebels in check somewhat, but the exact results are sketchy at best.
+
+SEE ALSO
+   Education,  Innards,  nation,  Products,  Research,   Technology,   attack,
+Nations, Producing, Updates
+

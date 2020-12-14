@@ -1,0 +1,23 @@
+                              Command : LUNLOAD
+
+NAME
+   lunload - Unload things from land units
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : lunload <COMMODITY> <UNITS> <AMOUNT>
+
+SYNTAX
+   [##:##] Command : lunload plane <UNITS> <PLANES>
+
+The lunload command is the opposite of lload and follows the exact same syntax
+...  so why look here for documentation?
+
+The only thing to know is that lunload won't unload more of  a  thing  if  the
+sector already has 999. For example, if a unit has 10 food, and the sector has
+994, you can only unload 5 of the 10 food.
+
+SEE ALSO
+   lload, LandUnits, Moving
+

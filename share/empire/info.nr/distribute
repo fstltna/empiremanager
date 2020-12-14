@@ -1,0 +1,99 @@
+                             Command : DISTRIBUTE
+
+NAME
+   distribute - Establish distribution destination sector
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : distribute <SECTS> <DISTSECT|.|h>
+
+The  distribute command is used to specify the way that goods will travel dur-
+ing an update.  Each sector is allowed to have one and only one  "distribution
+sector" (a warehouse or road, typically).  Subsequent distribute commands will
+replace the existing distribution sector.
+
+For example,
+   [##:##] Command : distribute 2,0 8,4
+
+   highway at 2,0 delivers to 8,4.
+   Distribution sector? 7,-1
+   highway 2,0 new path distributes to 7,-1 (cost 0.200)
+           Current best path is 'gguh'
+
+This command changed the distribution path for sector 2,0 from a warehouse  at
+8,4  to  a  warehouse at 7,-1. The cost is the mobility cost to move 1 normal-
+weight unit from the sector to the warehouse.
+
+DISTSECT is a normal empire sector specification. During  the  update,  empire
+will  determine the cheapest existing path to the distribution sector, and use
+that. (Note that the mobility cost for the path used during the  update  could
+be  different  than  the cost reported to you when you use the distribute com-
+mand, if you have re-designated sectors, or sectors were captured, etc) Again,
+it will use the cheapest path available AT THE TIME OF THE UPDATE.
+
+You may also use '.' or 'h' to specify no distribution sector.
+
+   [##:##] Command : dist 2,0 .
+
+   Distribution to and from 2,0 halted.
+
+The  command  will  warn  you if there is no existing path completely owned by
+you, and also if the path does not end at a warehouse.   It  is  not  required
+that the distribution path end at a warehouse, but it is required that you own
+all the sectors that the goods will travel along.
+
+Distribution & the Update
+
+One of the last things that takes place during the update, after  all  growth,
+production,  delivery,  etc,  distribution  takes  place. (The only thing that
+really happens after that is mobility increases) Each sector may have  product
+thresholds and a distribution sector. A threshold is a target level for a par-
+ticular commodity, like food. So, if the food threshold for a sector  is  100,
+it  will try to maintain 100 food there. If it has more than 100 food, it will
+export it to its distribution point. If it has less than 100, it will  try  to
+import food from the distribution point to reach 100.
+
+During the distribution phase of the update, all sectors (going left to right,
+top to bottom) first export excess commodities, and then (again left to right,
+top to bottom) import needed commodities.
+
+In  order  to  either send things to or get things from a distribution sector,
+you must own the distribution sector, and there must be a path of  owned  sec-
+tors to it. In order to export something from a sector, you must have military
+control of the sector. In order to import something from a  distribution  sec-
+tor, you must have military control of the distribution sector.
+
+Military control is defined as having military in the sector equal to at least
+1/10th the number of unconverted civilians  there.   Military  in  land  units
+count  towards  military  control.  Military in efficient security units count
+double.
+
+Mobility is used from the sector when sending "to"  the  distribution  sector.
+When getting something "from" the distribution sector, mobility is paid by the
+distribution sector.  See "info  Mobility"  for  an  explanation  of  mobility
+costs.
+
+Amount
+
+The  amount  is  determined  by  the  threshold,  as explained above.  Use the
+"threshold" command to specify what goods will flow to and from the warehouse.
+
+Finding sectors with not dist point set
+
+If you want to find sectors with no distribution point set, use the xdist  and
+ydist selectors:
+
+   [##:##] Command : level # ?xdist=xloc&ydist=yloc
+
+This finds all sectors that have themselves as a distribution point.
+
+Distributing civilians and military
+
+When  distributing  civilians or military, no distribution point will ship out
+its last civilian or the last military if there are no  civilians,  regardless
+of thresholds set in sectors using it as a distribution point.
+
+SEE ALSO
+   deliver, threshold, level, Distribution
+

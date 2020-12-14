@@ -1,0 +1,26 @@
+                           Subject : COMMUNICATION
+
+    accept     Find out who's accepting what communications from whom
+  announce *   Send an announcement to all players
+   country     Find out country status
+      echo     Echo a string back to the client
+     flash     Send a message directly to a friend's terminal
+ headlines     Summarize the weeks events (part of "news")
+      motd     Print the message of the day
+ newspaper *   The yellow press
+   players     List players currently connected to the game
+     power *   Display arbitrarily measured strengths of countries
+      pray *   Interacting with the Deity
+      read *   Read your telegrams
+    reject     Stop/start listening to other countries
+ sharebmap     Share parts of your bmap with another country
+  telegram *   Send "diplomatic" communique to another country
+    toggle     Toggle client flags
+      wall     Send a message directly to all allies terminals
+      wire *   Read announcements
+     xdump     Extended dump of everything under the sun
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

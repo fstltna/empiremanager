@@ -1,0 +1,17 @@
+                            Subject : COMMODITIES
+
+      Item-types *   Description of the different types of items
+
+          census *   Report contents of sectors
+       commodity *   Report commodities in sectors
+            drop     Use planes to drop commodities in your own sectors
+           grind     Grind bars back into dust
+         improve *   Improve the infrastructure of a sector
+            move *   Transport ore, civilians, guns, etc
+ sinfrastructure *   Report infrastructure of sectors
+            test     Check the effect of a proposed move
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

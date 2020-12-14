@@ -1,0 +1,58 @@
+                             Command : SATELLITE
+
+NAME
+   satellite - Download data from a reconnaissance satellite
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : satellite <PLANE> [<se|sh|l> [?cond&cond&...]]
+
+The  satellite  command  is  how  you get information from your satellites.  A
+satellite must be in orbit (launched) before it will begin transmitting.   The
+type of information you get from a satellite depends on what type of satellite
+it is.
+
+An ordinary satellite will return data that looks remarkably like "radar" out-
+put.  If the satellite has "imaging" capabilities you will see the sector des-
+ignations.  If not then you will see a '?' for inhabited sectors.
+
+A satellite with imaging capabilities will also show ships and land units.
+
+Spy satellites provide much more information.  Their output is  a  table  that
+looks  remarkably  like "spy" output followed by another table listing all the
+ships in the area with their owner, ship type, and efficiency.
+
+Spy satellites with "imaging" capabilities can also see subs!
+
+After launching, a satellite will take a while to come "on line".  During this
+period, (shown by mobility being < 127), you cannot use the satellite.
+
+If a satellite has been damaged, then it will only transmit partial data.  For
+example, a 75% satellite will only display three out of  every  four  sectors.
+Note  that it will always be the same 75% of sectors which are displayed (i.e.
+it is not random), so you will gain nothing  by  repeatedly  downloading  data
+from the satellite.
+
+You  may also filter the information you receive from the satellite using con-
+ditionals.  Here are some examples to show you how conditionals work.  In  all
+of the following examples, we will assume that we are using satellite #28.
+
+To list all airports:
+   [##:##] Command : sat 28 se ?des=*
+To list all airports owned by country #7:
+   [##:##] Command : sat 28 se ?des=*&own=7
+To list all ships in 12,14:
+   [##:##] Command : sat 28 sh ?xloc=12&yloc=14
+To list all land units:
+   [##:##] Command : sat 28 l
+To list all cavalry units:
+   [##:##] Command : sat 28 l ?type=cavalry
+
+For  a  complete list of conditionals you can use, see info Syntax.  Note that
+the large radar map is only drawn when the output is not filtered:
+   [##:##] Command : sat 28
+
+SEE ALSO
+   launch, radar, spy, census, map, Syntax, Ship-types, Planes, Detection
+

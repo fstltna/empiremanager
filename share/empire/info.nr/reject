@@ -1,0 +1,29 @@
+                               Command : REJECT
+
+NAME
+   reject - Stop/start listening to other countries
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : reject <reject|accept> <announcements|mail|loans> <NAT>
+
+The  reject command allows you to either accept or reject announcements, mail,
+or loans from a country.
+
+   [##:##] Command : reject
+reject or accept? reject
+mail, loans, or announcements? anno
+nat(s)? 0
+Rejecting annos from The_Scum
+   [##:##] Command : reject
+reject or accept? accept
+mail, loans, or announcements? anno
+nat(s)? 0
+Accepting annos from The_Scum
+
+The accept command can be used to see the communications status of a country.
+
+SEE ALSO
+   telegram, announce, read, wire, reject, accept, Communication, Diplomacy
+

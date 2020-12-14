@@ -1,0 +1,15 @@
+                               Command : FORCE
+
+NAME
+   force - Force an update
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : force
+
+Force an update now.
+
+SEE ALSO
+   enable, disable, reload, shutdown, Deity
+

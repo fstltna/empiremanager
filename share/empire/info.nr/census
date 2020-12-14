@@ -1,0 +1,71 @@
+                               Command : CENSUS
+
+NAME
+   census - Report contents of sectors
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : census <SECTS>
+
+The census command displays specific information on some or all of the sectors
+you occupy.
+
+In the syntax of the census command <SECTS> is the  area  on  which  you  wish
+information, (see "info Syntax").
+
+A typical usage might be:
+   [##:##] Command : census 0:9,0:9 ?des=m
+which would list data for mines in an area to the south-east of the capital.
+
+A census lists each of your sectors in the specified area headed by:
+
+   Tue Oct 10 22:24:49 1995
+   CENSUS                   del dst
+     sect        eff prd mob uf uf old  civ  mil   uw food work avail ter fall coa
+
+These columns represent:
+
+ sect  the x and y coordinates of the sector
+  eff  the efficiency of the sector (affects all benefits of a designated sec-
+       tor except mobility units)
+  prd  Will this sector be updated? If not, you will see an 'n'.  This can  be
+       controlled with the "start" and "stop" commands.
+  mob  the number of mobility units, (see "move")
+   uf  Two delivery columns corresponding to: uncompensated workers and food.
+   uf  Two  "distribute"  columns  corresponding to: uncompensated workers and
+       food.
+  old  the old owner of an occupied enemy sector.
+  civ  the number of civilians
+  mil  the number of military troops
+   uw  the number of uncompensated workers
+ food  the amount of food
+ work  the percentage of civilians working in the sector (based on  the  local
+       sector happiness).
+avail  the  quantity of workforce available for construction or maintenance of
+       land units, planes, ships, or nukes.
+  ter  This is a territory for the sector that you can specify using the "ter-
+       ritory" command.
+ fall  radioactive contamination due to nuclear fallout
+coast  Is this a coastal sector?
+
+For example:
+   [##:##] Command : cens #0
+
+   Tue Jun 20 00:33:43 1989
+   CENSUS                   del dst
+     sect        eff prd mob uf uf old  civ  mil   uw food work avail ter fall coa
+      2,-2   f  100%       8 .. ..        0  499    0    0   0%   64        0
+     -1,-1   f  100%      32 .. ..      629    0    0  970  43%   31    3   0
+      1,-1   n  100%   n  31 ..         627    0    0  970  51%   30        0
+      3,-1   )  100%      32 .. ..        0    0    0    0   0%    0        0
+     -2,0    h  100%      32 .. ..      629    0    0  970 100%   93   50   0   1
+      0,0    *  100%     114 .. ..      906  845    0  729 100%  173   50   0
+      2,0    c  100%     127 .. ..      154  100  124   71 100%   49        0
+      1,1    -    0%      32 .. ..        1    0    0    0   0%    0        0
+   8 sectors
+
+SEE ALSO
+   improve,  sinfrastructure,  commodity,  resource, level, territory, cutoff,
+map, start, stop, Sectors, Populace, Commodities
+

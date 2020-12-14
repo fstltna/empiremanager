@@ -1,0 +1,35 @@
+                                Server : Bugs
+
+NAME
+   Bugs - Known bugs in the Empire Server
+
+Level: Expert
+
+Please  work  with your deity (see "info pray") to get bugs reported to <wolf-
+pack@wolfpackempire.com>     or      via      SourceForge      <http://source-
+forge.net/projects/empserver> (registration required).
+
+NOTE: The following list is perennially incomplete and out of date.
+
+The classification scheme used by report is dumb.
+
+Guerrillas don't seem to carry the plague.
+
+If  a  ship, plane, land unit or nuke is out to trade, and gets destroyed, and
+its owner builds a new one that gets the same number, it will go on the  trad-
+ing market automatically.
+
+If  two  countries  are cooperating, its possible to raid an enemy airport and
+steal the planes by putting them out to trade.
+
+Two cooperative countries can move commodities  around  at  no  mobility  cost
+using the market.
+
+You  can  collapse enemy bridges by making a lightning raid on his bridgeheads
+and redesignating them, even if you only hold the bridgehead for a short time.
+
+Player input lines are silently truncated after 1023 characters.
+
+SEE ALSO
+   pray, Server
+

@@ -1,0 +1,16 @@
+                               Command : ATTACK
+
+NAME
+   attack - Sector vs. sector combat
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : attack <SECT> [<forts?> <ships?> <arty?> <planes?>]
+
+The  attack  command is used to attack a sector from neighboring sectors.  For
+more details, see "info Attacking".
+
+SEE ALSO
+   Attacking, Combat, LandUnits
+

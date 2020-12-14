@@ -1,0 +1,16 @@
+                                Command : QUIT
+
+NAME
+   quit - Log out of Empire
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : quit
+
+You  use the "quit" command to close your connection to the Empire Server.  In
+some clients, pressing control-D will do the same thing.
+
+SEE ALSO
+   Playing
+

@@ -1,0 +1,24 @@
+                                Subject : MAPS
+
+      bdes     Manually change your bmap
+  bestpath     Show the best path from one sector to another
+      bmap *   Big map of all your worldly knowledge
+     lbmap *   Big map of all your worldly knowledge around a land unit
+      lmap *   Map around a land unit
+       map *   Generate a map showing sector types, seas, etc
+     nbmap *   Big map of all your worldly knowledge around a nuke
+      nmap *   Generate a map showing new sector types or around a nuke
+    origin     Change the origin of your country's coordinate system
+     pbmap *   Big map of all your worldly knowledge around a plane
+      pmap *   Get a map around a plane
+     realm *   Print out or modify one of your "realms"
+     sbmap *   Big map of all your worldly knowledge around a ship
+      sect     Show only sectors owned by you in map form
+ sharebmap     Share parts of your bmap with another country
+      smap *   Get a map around a ship
+    survey     Show distributions in map form
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by * are the most important and should
+be read by new players.
+

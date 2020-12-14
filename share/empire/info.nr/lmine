@@ -1,0 +1,50 @@
+                               Command : LMINE
+
+NAME
+   lmine - Mine a sector with an engineering unit
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : lmine <UNIT> <NUMBER>
+
+This command causes a unit with the engineering ability to lay mines in a sec-
+tor. (see "info Unit-types").  If you ask to lay more mines than the  unit  is
+carrying,  then  it will attempt to draw shells from a supply source (see info
+supply for details on that).  It costs 1 mobility point per mine laid,  so  an
+engineer  with 20 mobility can lay a maximum of 20 mines.  The 'strength' com-
+mand will list how many mines you have put in each sector.
+
+See "info Hitchance" for the chance of something hitting a land mine.
+
+If a defender in land combat has land-mines in the sector, he receives a bonus
+to  his  defense. See info "attack" for more information.  If the attacker has
+engineering units with him, the bonus is less.
+
+In the command syntax <UNIT> is the number of one of your units  and  <NUMBER>
+is  the  number  of  mines  you wish to lay.  That number of shells, (assuming
+you've got them), will be dropped in the sector that unit occupies,  magically
+becoming mines.
+
+You need not fear mines in sectors that you are the old owner of. This is nor-
+mally all your sectors. When you capture a mined  sector,  however,  you  will
+need to worry about those mines until you become the old owner of that sector.
+Once you are the old owner of a sector (i.e when you get the  message  "Sector
+x,y  is now fully yours."), you have the mines located, and will no longer hit
+them.
+
+If you are in a captured sector, and the original owner attacks, you will  not
+get the mine bonus (as he knows where all the mines are)
+
+Mines  can  only  be  removed  safely  by a unit with the engineering ability.
+(Other units can remove them by hitting them, but...)  Engineering units  mov-
+ing  through  a  sector with unlocated mines will attempt to remove them.  The
+number of times each engineer sweeps for mines is equal to 2 times the  number
+of  mines  it  can  carry.   The chance of the engineer finding a mine on each
+sweep is equal to 50% times its 'att' value (see  show  land  stats).   If  an
+engineer  sweeps  more  mines than it can carry, then it will drop the rest as
+shells into the sector.
+
+SEE ALSO
+   strength, supply, Hitchance, Damage, Attacking, LandUnits
+

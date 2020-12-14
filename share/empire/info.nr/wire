@@ -1,0 +1,30 @@
+                                Command : WIRE
+
+NAME
+   wire - Read announcements
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : wire [yes|no|<days>]
+
+The  wire  command  is  used to read the announcements sent you by other coun-
+tries.
+
+After reading all your announcements you may mark them as being read by speci-
+fying  "yes"  or not by specifying "no" as an argument.  If an argument is not
+supplied then you will be prompted to either answer "yes" or "no"  to  marking
+announcements  as being read.  If you supply or answer "no", the announcements
+will remain pending but you will not be reminded of them.
+
+You can read announcements that you have previously marked as read by specify-
+ing the <days> argument.  For example:
+   [##:##] Command : wire 3
+would print the announcements from the last three days.  If you specify <days>
+argument, you will not be prompted to mark the announcements as being read.
+
+In order to read telegrams, use the 'read' command.
+
+SEE ALSO
+   telegram, read, accept, reject, Communication
+

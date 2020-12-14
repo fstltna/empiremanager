@@ -1,0 +1,74 @@
+                               Command : CUTOFF
+
+NAME
+   cutoff - List delivery thresholds
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : cutoff <SECTS>
+
+The  cutoff report provides information about the various delivery cutoff lev-
+els in some or all of the sectors that you occupy.
+
+In the syntax of the level command <SECTS> is  the  area  on  which  you  wish
+information, (see "info syntax").  A typical usage might be:
+   [##:##] Command : cutoff -6:6,-3:3
+which  would list data for the area extending three sectors out from the capi-
+tal in each direction.
+
+The cutoff report lists each of your sectors with the following heading:
+
+   DELIVERY CUTOFF LEVELS
+     sect    ufsgpidbolhr   uw food  sh gun pet iron dust bar oil lcm hcm rad
+
+These columns represent:
+
+        sect  the x and y coordinates of the sector
+ufsgpidbolhr  the fourteen delivery direction columns correspond to the deliv-
+              ery  direction  for  civilians,  military, food, guns, petroleum
+              (refined), iron ore, dust (gold), bars  (dust),  oil,  lcm,  and
+              hcm.
+         civ  the delivery cutoff threshold for civilians in that sector
+         mil  the delivery cutoff threshold for military in that sector
+          uw  the  delivery cutoff threshold for uncompensated workers in that
+              sector
+        food  the delivery cutoff threshold for food in that sector
+         gun  the delivery cutoff threshold for guns in that sector
+          sh  the delivery cutoff threshold for shells in that sector
+         pet  the delivery cutoff threshold for petroleum in that sector
+        iron  the delivery cutoff threshold for iron ore in that sector
+        dust  the delivery cutoff threshold for gold dust in that sector
+         bar  the delivery cutoff threshold for gold bars in that sector
+         oil  the delivery cutoff threshold for oil in that sector
+         lcm  the delivery cutoff threshold for light  construction  materials
+              in that sector
+         hcm  the  delivery  cutoff threshold for heavy construction materials
+              in that sector
+         rad  the delivery cutoff threshold for radioactive materials in  that
+              sector
+
+For example:
+   [##:##] Command : cutoff -3:3,-2:0
+
+   Sat May 31 18:40:57 2008
+   DELIVERY CUTOFF LEVELS
+      sect   cmufsgpidbolhr civ mil  uw food sh gun pet irn dst bar oil lcm hcm rad
+     0,0   c ..............   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    -5,-3  a ..n...........   0   0   0 400   0   0   0   0   0   0   0   0   0   0
+    -6,-2  k ..j...........   0   0   0 400   0   0   0   0   0   0   0   0   0   0
+    -4,-2  + ..j...........   0   0   0 400   0   0   0   0   0   0   0   0   0   0
+    -2,-2  m ......n.......   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    -5,-1  t ..............   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+    -1,-1  w ......j.......   0   0   0   0   0   0   0 800   0   0   0   0   0   0
+     1,-1  m ......j...b...   0   0   0   0   0   0   0  40   0   0   0   0   0   0
+     3,-1  j .......j......   0   0   0   0   0   0   0   0 104   0   0   0   0   0
+     5,-1  b ..............   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+     0,0   c ..y...........   0   0   0 200   0   0   0   0   0   0   0   0   0   0
+     2,0   + ..g.......j...   0   0   0 200   0   0   0   0   0   0   0  80   0   0
+    -5,1   l ..........j...   0   0   0   0   0   0   0   0   0   0   0   0   0   0
+       12 sectors
+
+SEE ALSO
+   deliver, route, commodity, census, Distribution
+

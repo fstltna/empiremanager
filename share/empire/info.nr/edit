@@ -1,0 +1,40 @@
+                                Command : EDIT
+
+NAME
+   edit - Edit sectors, ships, planes, land units, nukes or countries
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : edit land <SECTS> [<KEY> <VALUE>]...
+
+SYNTAX
+   [##:##] Command : edit ship <SHIPS> [<KEY> <VALUE>]...
+
+SYNTAX
+   [##:##] Command : edit plane <PLANES> [<KEY> <VALUE>]...
+
+SYNTAX
+   [##:##] Command : edit unit <LANDS> [<KEY> <VALUE>]...
+
+SYNTAX
+   [##:##] Command : edit nuke <NUKES> [<KEY> <VALUE>]...
+
+SYNTAX
+   [##:##] Command : edit country <NATS> [<KEY> <VALUE>]...
+
+The  "edit"  command allows deities to edit properties of sectors (confusingly
+called <land> here), ships, planes, land units, nukes, or countries.
+
+If you don't specify any <KEY> <VALUE> pair, "edit" enters  interactive  mode.
+Editable  properties  are  shown together with their keys and values.  Enter a
+key character and a value to change a property.  Hit return to finish the com-
+mand.
+
+You can also specify one or more <KEY> <VALUE> pairs as command arguments.  In
+this case, "edit" just sets the properties, and  does  not  enter  interactive
+mode.
+
+SEE ALSO
+   give, swapsector, Deity
+

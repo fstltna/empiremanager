@@ -1,0 +1,23 @@
+                               Subject : SERVER
+
+    Innards +   Some details about the inner workings of the server
+
+       Bugs     Known bugs in the Empire Server
+   Chainsaw !   Changes from KSU Empire to Chainsaw (1992-93)
+    Empire2 !   Changes from Chainsaw to Empire 2 (1995)
+    Empire3     Changes in Empire 3 (1995-96)
+  Empire4.0 !   Changes in Empire 4.0 (1996-1998)
+  Empire4.2 !   Changes in Empire 4.2 (1998-2005)
+  Empire4.3 !   Changes in Empire 4.3 (2006-2015)
+  Empire4.4     Changes in Empire 4.4 (2015-present)
+        God     Tips on being God
+     Hidden     The HIDDEN option
+    History     Empire Revision History
+       Merc     Changes from KSU code to Merc code (1992)
+ Old-empire !   Differences from 1.2 to UCB Empire
+    Options     Server options
+
+For  info  on  a particular topic, type "info <topic>" where <topic> is one of
+the topics listed above.  Topics marked by + are obsolete.  Topics with unusu-
+ally long info are marked with a !.
+

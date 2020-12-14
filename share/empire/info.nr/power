@@ -1,0 +1,78 @@
+                               Command : POWER
+
+NAME
+   power - Display arbitrarily measured strengths of countries
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : power [new|update] [<NUM>|country <NATS>]
+
+The  power report provides one view of national strengths.  It can be particu-
+larly helpful in planning defense strategies.
+
+Normally, the last saved power report is shown.  The optional arguments  "new"
+and "update" request a new power report based on up-to-date information.  This
+costs 10 BTUs.  The new report is saved for  use  by  future  power  commands,
+except when a deity uses "update".  This lets deities examine up-to-date power
+reports without affecting what players get to see.
+
+If option AUTO_POWER is enabled, the command doesn't let you  save  new  power
+reports.   Instead, the power report is updated automatically right before the
+update.
+
+If the optional "NUM" argument is given, only the top NUM entries in the power
+chart  will  be displayed.  Note that for deities, if you give a negative num-
+ber, only the top NUM entries in the power chart will be  displayed,  and  the
+power number rating will not be displayed.
+
+If the optional "country" argument is given, then the information is given for
+those particular countries.
+
+In the power report the countries are listed in  order  of  decreasing  "power
+factor".   Powerless  countries are not shown unless explicitly requested with
+the "country" argument.
+
+The power report shows the following columns:
+
+sects  number of sectors
+  eff  average sector efficiency
+  civ  number of civilians
+  mil  number of military
+shell  number of shells
+  gun  number of guns
+  pet  amount of petrol
+ iron  amount of iron
+ dust  amount of dust
+  oil  amount of oil
+  pln  number of planes
+ ship  number of ships
+ unit  number of land units
+money  cash on hand
+
+The "power factor" is determined by the following equation:
+
+   power factor = (  power value of money
+                   + power value of sectors
+                   + power value of commodities in sectors
+                   + power value of commodities loaded on ships and land units)
+                  * (20 + nation tech level) / 500
+                + power value of ships, planes, land units and nukes
+                  * (20 + their tech level) / 500
+
+The power value of money is dollars / 100.
+
+The power value of a sector is (the power value of  the  materials  and  money
+needed to build + maximum population / 1000 * 8 + 1) * efficiency / 100.
+
+The  power value of a ship, plane, land unit or nuke is the power value of the
+materials and money needed to build * efficiency / 100.
+
+The power value of commodities is amount * type factor.  "show item" shows the
+type factor in column "power".
+
+Efficiency is in percent.
+
+SEE ALSO
+   census, nation, Communication, Nations, Diplomacy
+

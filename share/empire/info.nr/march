@@ -1,0 +1,128 @@
+                               Command : MARCH
+
+NAME
+   march - Move a land unit or units
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : march <LAND UNIT/ARMY> <ROUTE|DESTINATION>
+
+The  march  command is the "move" command applied to land units.  You can con-
+trol one unit or an entire army with it, but they must all start in  the  same
+sector.
+
+Land  units  may  only move into sectors you own, sectors of countries you are
+allied with or deity-owned sectors with 1 exception.  Spies.  Spies  may  move
+anywhere, with a chance of getting caught.  See "info Spies" for more informa-
+tion.
+
+The program will prompt with the maximum and  minimum  mobility  of  the  land
+units in the army, and its current position in the form:
+
+   <57.0:23.5: -6,4>
+
+which means the land units have between 23.5 and 57 mobility units, and are in
+sector -6,4.  You may indicate the direction you would like the army  to  move
+by typing a string of letters consisting of any combination of the following:
+
+   y  for up-left
+   u  for up-right               y    u
+   g  for left                    \  /
+   j  for right               g  --  --  j
+   b  for down-left               /  \
+   n  for down-right             b    n
+
+Other commands you may type while navigating are:
+
+   M  for map
+   B  for bmap
+   f  to change the leader
+   i  to list land units you are marching
+   r  for radar
+   l  for lookout
+   m  to sweep landmines
+   d  to drop landmines
+   h  for end of movement
+
+The  "radar"  command will cause the lead unit to use it's radar, if any.  You
+may also give a unit number or army or group of units on  the  same  line:  "r
+12/13/14/73"
+
+The lookout command works in the same way as radar.
+
+The  "map"  command  will give you a map surrounding the current position.  By
+default, it will be around the leader.  You can also supply additional parame-
+ters:
+   [##:##] Command : <32.3: g 6,2> M 3 ls
+
+is equivalent to a "lmap" command. like this:
+   [##:##] Command : lmap 3 ls
+The  "bmap"  command works in the same way, it is equivalent to a "lbmap" com-
+mand.
+
+The "leader" command will the change the leader.  By default, it  will  select
+next unit in the list, but you may also specify a land unit.
+
+The  "drop"  command will lay land mines using engineers.  You can specify the
+unit number or army or groups of units and the number of  land  mines  on  the
+same  line:  "d 12/13 10".  An omitted unit number defaults to the leader, for
+example "d 10" lays ten land mines from the leader.  If you omit the number of
+land mines as well, the leader will lay one mine.
+
+The  "sweep"  command will have the engineers in the marching group search for
+mines in the current sector.  This costs as much mobility as entering a sector
+with mobility cost of 0.2.
+
+Note:  the  lookout, radar, drop and sweep commands use BTUs, just as if you'd
+typed them separately from the command line.
+
+Since the <ROUTE> can be specified in the command line, simple unit  movements
+are often typed as a single line, such as:
+   [##:##] Command : march 19 jjjh
+
+Or  some  movements may be done partly on the command line and partly interac-
+tively:
+
+   [##:##] Command : march 18 yy
+
+   Leader is cav  cavalry #0
+    c .
+    . h
+   <105.6:105.6: -24,-2> l
+   Your capital 100% efficient with 549 civ with 10 mil @ -5,-3
+   Your highway 100% efficient with 549 civ with 0 mil @ -4,-2
+   Your harbor 100% efficient with 549 civ with 109 mil @ -3,-1
+    c .
+    . h
+   <105.6:105.6: -4,-2> yh
+   cav  cavalry #0 stopped at -5,-3
+
+You may also simply specify the destination sector.  In this  case,  the  land
+units will take a cheapest path (in terms of mobility) to the destination sec-
+tor.
+
+For example,
+   [##:##] Command : march 18 -6,-2
+
+   Leader is cav  cavalry #0
+   Using path 'yyh'
+   cav  cavalry #0 stopped at -6,-2
+
+See "info Mobility" for the mobility cost to march land units.
+
+Land units entering a sector that has been mined may trip landmines (see "info
+Hitchance").   Units with engineering capabilities can remove up to five mines
+per pass through a sector (indicated by the message "Sweep...").   Such  units
+also take 1/2 normal damage from mines.  See info lmine for more details.
+
+Hostile  land/sea/air units may fire at/bomb/missile your units, if they're on
+interdiction missions (see "info mission").  The chance of missiles and  bombs
+hitting  your land units is determined by the land unit that is easiest to hit
+(see "bomb" for the chance of hitting).  Any damage incurred is divided evenly
+among  the  marching land units.  Collateral damage will be done to the sector
+that the units were marching into.
+
+SEE ALSO
+   Unit-types, lmine, LandUnits, Transportation, Spies, Moving
+

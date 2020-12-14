@@ -1,0 +1,47 @@
+                               Command : SSTAT
+
+NAME
+   sstat - Report statistics of ship, fleet or ships in a given area
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : sstat [<SHIP/FLEET> | <SECTS>]
+
+The  sstat  command  is  a  report of the varying statistics of your ships and
+lists the info in a readable format.  Since your  ships'  statistics  vary  by
+tech  level,  this  is a very useful way to see what the attack, defense, etc.
+modifiers are on a per-ship basis.
+
+The <SHIP/FLEET> and <SECTS> arguments are provided in case you only  wish  to
+look at one ship or one fleet or all ships within a given area.
+
+Sstat  expects  an  argument.  To see every ship you own, give it the argument
+'*', or type "sstat *".
+
+The report format contains the following fields:
+
+     shp#  the ship number
+ship-type  the type of ship; "patrol boat", "submarine", etc,
+      x,y  the ship's current location (relative to your capital),
+      eff  the ship's efficiency,
+     tech  the tech level of the ship
+      def  the armor value of the ship (i.e. how strong is the hull)
+      spd  the speed of the ship
+      vis  the visibility of the ship (i.e. how easy is it to see)
+      rng  twice the distance the guns can fire, The range formula is  (rng/2)
+           * ((tech + 50) / (tech + 200))
+      fir  the number of guns the ship can fire at once
+
+For example:
+   [##:##] Command : ship *
+
+   shp# ship-type                 x,y    eff  tech def spd vis rng fir
+      0 dd  destroyer             1,1    100%  140  51  41  19   9   2
+      1 bb  battleship            1,1    100%  200 129  35  34  17   7
+   2 ships
+
+SEE ALSO
+   ship,  build,  cargo, fleetadd, navigate, load, lookout, scrap, sonar, tor-
+pedo, upgrade, land, Ships
+

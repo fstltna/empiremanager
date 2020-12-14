@@ -1,0 +1,20 @@
+                               Command : RESET
+
+NAME
+   reset - Reset the price of a product on the market
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : reset <LOT #> <PRICE>
+
+The  reset  price  command  allows you to reset the prices of your commodities
+that are on the market.
+
+<LOT #> is the lot # shown by the 'market' command.  <PRICE> is the new asking
+price.   An  asking  price of 0 will take your goods off the market and return
+them to your harbor or warehouse.
+
+SEE ALSO
+   buy, sell, Commerce
+

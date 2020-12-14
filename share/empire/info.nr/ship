@@ -1,0 +1,40 @@
+                                Command : SHIP
+
+NAME
+   ship - Report status of ships
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : ship <SHIPS>
+
+The ship report command is a census of your ships.  For example:
+   [##:##] Command : ship *
+
+   shp#     ship type       x,y   fl   eff civ mil  uw  fd pn he xl ln mob tech
+      0 dd  destroyer       1,1       100%   0   0   0   0  0  0  0  0 127  140
+      1 bb  battleship      1,1       100%   0   0   0   0  0  0  0  0 120  200
+   2 ships
+
+The report format contains the following fields:
+
+     shp#  the ship number
+ship type  the type of ship; "patrol boat", "submarine", etc.,
+      x,y  the ship's current location,
+      flt  the fleet designation letter (set by "fleetadd" command),
+      eff  the ship's efficiency, prefixed by "!" if stopped,
+      civ  the number of civilians on board,
+      mil  mil is the number of military on board,
+       uw  the number of uncompensated workers on board,
+       fd  the amount of food on board,
+       pn  the number of planes on the ship,
+       he  the number of helicopters on board,
+       xl  the number of extra-light planes on board,
+       ln  the number of land units on board,
+      mob  the mobility of the ship,
+     tech  the tech level of the ship.
+
+SEE ALSO
+   sstat,  build, cargo, fleetadd, navigate, load, lookout, scrap, sonar, tor-
+pedo, upgrade, land, Ships
+

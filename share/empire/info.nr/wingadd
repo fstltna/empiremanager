@@ -1,0 +1,45 @@
+                              Command : WINGADD
+
+NAME
+   wingadd - Designate members of a "wing"
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : wingadd <WING> <PLANE/WING>
+
+The wingadd command is used to specify the wing groupings of your planes.
+
+   [##:##] Command : wingadd <WING> <PLANE/WING>
+In the syntax <WING> is the alphabetic character to be used as the wing desig-
+nation.  This character can be chosen from the set of upper or lower case  a-z
+and  tilde  (~).  The pseudo-wing specification tilde specifies all planes not
+currently in any wing.
+
+The specification of planes, <PLANE/WING>, can have one of several syntaxes:
+
+   example     meaning
+   -------     -------
+   23          plane 23
+   2/14/23     planes 2, 14, and 23
+   c           all planes currently in wing `c'
+   ~           all planes currently in the "null" wing
+   2,3         all planes in sector 2,3
+   -1:3,0:2    all planes in the square area bounded by -1,0 & 3,2
+
+All wings, (with the exception of the `~' wing), are limited to  some  maximum
+size  and  you will be informed how many planes can be added when this command
+is run.
+
+Having planes organized into wings can be very  helpful  in  loading,  moving,
+etc.,  in that fewer commands are required to perform these commands on groups
+of planes if they can be specified by wing number.
+
+Note that you can remove planes from a wing by adding them to  the  `~'  wing.
+e.g.
+   [##:##] Command : wingadd ~ A
+This command would purge all planes from wing `A'.
+
+SEE ALSO
+   plane, fly, Planes
+

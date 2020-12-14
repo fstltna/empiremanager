@@ -1,0 +1,58 @@
+                               Command : LCARGO
+
+NAME
+   lcargo - List the commodities on board your units
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : cargo [<SHIP/FLEET> | <SECTS>]
+
+SYNTAX
+   [##:##] Command : lcargo [<UNIT/ARMY> | <SECTS>]
+
+The  cargo  command lists the commodities on board your ships in readable for-
+mat. The lcargo command does the same for land units.
+
+The <SHIP/FLEET>, <UNIT/ARMY>, and <SECTS> arguments are provided in case  you
+only wish to look at one ship/unit or one fleet/army or all ships/units within
+a given area.
+
+The report format contains the following fields:
+
+     shp#  the ship number, or
+     lnd#  the unit number,
+ship type  the type of ship; "pt", "fb", etc, or
+unit type  the type of unit; "art", "eng", etc,
+      x,y  the ship/unit's current location,
+      flt  the fleet/army designation letter (set by "fleetadd/army" command),
+      eff  the ship/unit's efficiency,
+      civ  the number of civilians on board,
+      mil  the number of military on board,
+       uw  the number of uncompensated workers on board,
+       sh  the number of shells on board,
+      gun  the number of guns on board
+      pet  the amount of petroleum on board
+      irn  the amount of iron on board
+      dst  the amount of gold dust on board
+      bar  the number of gold bars on board
+      oil  the amount of oil on board
+      lcm  the amount of light construction materials on board
+      hcm  the amount of heavy construction materials on board
+      rad  the amount of radioactive material on board
+
+For example:
+   [##:##] Command : cargo F
+
+   shp#         x,y   flt eff  civ mil  uw  sh gun pet irn dst bar oil lcm hcm rad
+      3 dd      8,-14  F   86%   0   2   0  34   4   0   0   0   0   0   0   0   0
+      4 fb     -2,14   F  100%  10  10   0   0   0  10   0   0   0  10   0   0   0
+      7 dd      8,-14  F  100%   0  60   0  40   4   0   0   0   0   0   0   0   0
+     10 fb      5,-15  F  100%   1   0   0   0   0   0   0   0   0   0   0   0   0
+     11 fb      3,-15  F   20%   0   0   0   0   0   0   0   0   0   0   0   0   0
+     13 bb      4,-16  F   80%   0  10   0 100   4   0   0   0   0   0   0   0   0
+   6 ships
+
+SEE ALSO
+   land, ship, build, march, navigate, load, lload, fleetadd, army, LandUnits
+

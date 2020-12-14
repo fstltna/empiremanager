@@ -1,0 +1,24 @@
+                              Command : SABOTAGE
+
+NAME
+   sabotage - Damage enemy territory with spy unit
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : sabotage <UNITS>
+
+The  "sabotage"  command is used to blow up commodities and cause havoc in the
+sector the spy is in.  Spies don't check relations and  can  cause  damage  to
+enemies  and  allies.   Sabotage  can only be done by spy units.  The spy must
+have a shell to make an attempt.
+
+Terrorizing your neighbors is dangerous work.  Spies can be caught or die dur-
+ing a sabotage attempt.
+
+Sabotage  can be more effective against enemy warehouses filled with explosive
+or flammable materials.
+
+SEE ALSO
+   Spies, Unit-types, LandUnits
+

@@ -1,0 +1,26 @@
+.TH PCONFIG 6
+.SH NAME
+pconfig \- Print Empire configuration
+.SH SYNOPSIS
+.B pconfig
+[\fIconfigfile\fP]
+.br
+.SH DESCRIPTION
+.B pconfig
+prints server configuration to standard output.  Output is in
+configuration file syntax, and is designed to be self-explanatory.
+.SH OPERANDS
+.TP
+.I configfile
+makes
+.B pconfig
+use the game configuration specified in
+.I configfile
+instead of compiled-in defaults.  You can use this to merge
+.I configfile
+with compiled-in defaults into a configuration file that specifies all
+configuration keys.
+.SH "SEE ALSO"
+\fIemp_server\fR(6).
+.SH AUTHOR
+Julian Onions <j.onions@nexor.co.uk>

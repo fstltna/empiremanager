@@ -1,0 +1,31 @@
+                              Concept : Railroad
+
+NAME
+   Railroad - How railroads work
+
+Level: Expert
+
+Trains  are  land units with capability "train".  They can't be loaded on land
+units, but they can be loaded on ships, subject to the usual restrictions  for
+non-light and heavy land units.
+
+Unlike  other  units,  trains  can enter a sector only if it has (operational)
+railroad track.
+
+If option RAILWAYS is disabled, a sector has railroad track  as  long  as  its
+rail  infrastructure  efficiency  is non-zero.  Train mobility cost depends on
+rail infrastructure efficiency  (see  "info  Mobility").   Spy  and  satellite
+reports show approximate rail infrastructure efficiency in column "rl eff".
+
+If  option RAILWAYS is enabled, all highway-like sectors are railways, and the
+track is operational as long as the sector is at least 5% efficient.  A sector
+is highway-like if its mobility cost at 100% is zero (column mob cost in "show
+sect s").  Operational railways additionally extend track into  adjacent  sec-
+tors  that  are  at  least 60% efficient and owned by the same nation.  Sector
+selector track gives the number of  operational  railways  within  one  sector
+range.   Spy  and  satellite  reports show the presence of track in column "rl
+eff".  To visualize your railway network, try "sect # ?track#0".
+
+SEE ALSO
+   LandUnits
+

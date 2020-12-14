@@ -1,0 +1,24 @@
+                              Command : SKYWATCH
+
+NAME
+   skywatch - Check from sectors for nearby satellites
+
+Level: Expert
+
+SYNTAX
+   [##:##] Command : skywatch [<SECTS>]
+
+The skywatch command allows sectors to report sightings of satellites.
+
+The visibility range is equal to four times the sector efficiency expressed as
+a decimal times the technology factor; e.g. a 100% efficient mine with  a  50%
+technology  factor  can  see  2 sectors away.  An exception is radar installa-
+tions, which have a maximum range equal to fourteen  times  the  sector  effi-
+ciency, (i.e. 3.5 times as far).
+
+A typical usage might be:
+   [##:##] Command : sky #3 ?type=)
+
+SEE ALSO
+   coastwatch, radar, Detection
+

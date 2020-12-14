@@ -1,0 +1,21 @@
+                               Command : BREAK
+
+NAME
+   break - Break sanctuary and begin to play
+
+Level: Basic
+
+SYNTAX
+   [##:##] Command : break
+
+In  Empire  your  sectors  are initially sanctuaries.  While in sanctuary your
+people don't eat, work or reproduce.  They also can't be attacked.
+
+Break removes the sanctuary protection from your country and forces your  peo-
+ple  to  work for a living.  Sanctuaries become capitals, unless the deity set
+up a different new designation.  You can't do any country development commands
+until you break out of sanctuary.
+
+SEE ALSO
+   Sector-types, Nations
+
