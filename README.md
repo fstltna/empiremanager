@@ -1,4 +1,4 @@
-# Empire Utilities (1.0.0)
+# Empire Utilities (1.1.0)
 
 These are tools to make playing a game of Wolfpack Empire easier -  Official support sites: [Official Sourceforge Repo](https://sourceforge.net/projects/synchronet-bbs-utilities/) - [Official Forum](https://synchronetbbs.org/index.php/forum/sysops) [Join Our Discord Server](https://discord.gg/Q5KBBKY)
 
