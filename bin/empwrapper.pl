@@ -12,14 +12,17 @@ my $BannerText = "logo.txt";
 my $LESSCMD = "/usr/bin/less";
 my $WhatIsFile = "whatisempire.txt";
 my $EmpireLinks = "empirelinks.txt";
+$ENV{'LESSSECURE'} = '1';
 
 ###################################################
 # No changes below here
 ###################################################
 
 
-my $EMP_ver = "1.0.0";
+my $EMP_ver = "1.1.0";
 my $url = 'http://empiredirectory.net/empusers.txt';
+
+my $clear_screen = cls();
 
 # Get file of active users
 my $ff = File::Fetch->new(uri => $url);
@@ -59,6 +62,8 @@ sub DisplayLogo
 	system("cat $BannerText");
 }
 
+print $clear_screen;
+
 while (-1)
 {
 	MainMenu();
@@ -68,7 +73,6 @@ while (-1)
 	}
 	if ($menuselection eq "1")
 	{
-		my $clear_screen = cls();
 		print $clear_screen;
 		system("$EmpireCommand");
 		print "--[ Press Enter To Continue ]--";
@@ -76,7 +80,6 @@ while (-1)
 	}
 	elsif ($menuselection eq "2")
 	{
-		my $clear_screen = cls();
 		print $clear_screen;
 		DisplayLogo();
 		open(my $fh, '<:encoding(UTF-8)', $file)
@@ -91,13 +94,11 @@ while (-1)
 	}
 	elsif ($menuselection eq "3")
 	{
-		my $clear_screen = cls();
 		print $clear_screen;
 		system("$LESSCMD $WhatIsFile");
 	}
 	elsif ($menuselection eq "4")
 	{
-		my $clear_screen = cls();
 		print $clear_screen;
 		system("$LESSCMD $EmpireLinks");
 	}
