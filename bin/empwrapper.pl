@@ -12,7 +12,6 @@ my $BannerText = "logo.txt";
 my $LESSCMD = "/usr/bin/less";
 my $WhatIsFile = "whatisempire.txt";
 my $EmpireLinks = "empirelinks.txt";
-$ENV{'LESSSECURE'} = '1';
 
 ###################################################
 # No changes below here
@@ -21,6 +20,7 @@ $ENV{'LESSSECURE'} = '1';
 
 my $EMP_ver = "1.1.0";
 my $url = 'http://empiredirectory.net/empusers.txt';
+$ENV{'LESSSECURE'} = '1';
 
 my $clear_screen = cls();
 
