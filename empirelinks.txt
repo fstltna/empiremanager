@@ -1,1 +1,14 @@
-Test
+Here are some links for more information on Empire
+==================================================
+
+https://empiredirectory.net - Our official website and server hosting
+http://www.wolfpackempire.com - The official Wolfpack Empire site
+https://empiredirectory.net/index.php/empire/faqs-menu/15-minutes-to-empire - Great introduction to playing Empire
+
+Clients:
+==================================================
+
+* https://empiredirectory.net/index.php/empire/faqs-menu/client-comparison - Comparision of various clients
+* https://empiredirectory.net/index.php/new-downloads/download/11-client-software/67-winace-2-5-72-full - One of the 2 best Empire clients
+* https://sourceforge.net/projects/ptkei2/ - Another great client for Empire. Written in Python/Tk and works on most platforms
+
