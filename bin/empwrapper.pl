@@ -100,6 +100,8 @@ while (-1)
 	{
 		print $clear_screen;
 		system("$LESSCMD $EmpireLinks");
+		print "--[ Press Enter To Continue ]--";
+		my $usrword = <STDIN>;
 	}
 }
 
