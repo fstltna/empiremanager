@@ -9,7 +9,7 @@ use File::Fetch;
 
 my $EmpireCommand = "/home/empire/empiremanager/bin/empire -r -s empiredirectory.net:6665";
 my $BannerText = "logo.txt";
-my $LESSCMD = "/bin/more";
+my $LESSCMD = "/usr/bin/less";
 my $WhatIsFile = "whatisempire.txt";
 my $EmpireLinks = "empirelinks.txt";
 
@@ -18,8 +18,9 @@ my $EmpireLinks = "empirelinks.txt";
 ###################################################
 
 
-my $EMP_ver = "1.2.0";
+my $EMP_ver = "1.1.0";
 my $url = 'http://empiredirectory.net/empusers.txt';
+$ENV{'LESSSECURE'} = '1';
 
 my $clear_screen = cls();
 
@@ -100,8 +101,6 @@ while (-1)
 	{
 		print $clear_screen;
 		system("$LESSCMD $EmpireLinks");
-		print "--[ Press Enter To Continue ]--";
-		my $usrword = <STDIN>;
 	}
 }
 
