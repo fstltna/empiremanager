@@ -7,13 +7,15 @@ use Term::ReadKey;
 use Term::ANSIScreen qw(cls);
 use File::Fetch;
 
-my $EmpireCommand = "/home/empire/empiremanager/bin/empire -r -s empiredirectory.net:6665";
-my $EmpireFeverCommand = "/home/empire/empiremanager/bin/empire -r -s blitz.wolfpackempire.com:4567";
+my $EmpireCommand = "/sbbs/doors/empire/bin/empire -r -s empiredirectory.net:6665";
+my $EmpireFeverCommand = "/sbbs/doors/empire/bin/empire -r -s blitz.wolfpackempire.com:4567";
 my $BannerText = "logo.txt";
 my $LESSCMD = "/usr/bin/less";
 my $WhatIsFile = "whatisempire.txt";
 my $EmpireLinks = "empirelinks.txt";
 my $OtherGamesFile = "OtherGames.csv";
+my $SanctFile = "http://empiredirectory.net/empusers.txt";
+my $FeverFile = "http://blitz.wolfpackempire.com/empusers.txt";
 
 ###################################################
 # No changes below here
@@ -29,9 +31,11 @@ my $ContactUs = "newempiregame\@empiredirectory.net";
 
 my $clear_screen = cls();
 
-# Get file of active users
-my $ff = File::Fetch->new(uri => $url);
-my $file = $ff->fetch() or die $ff->error;
+if (-f "empusers.txt")
+{
+	unlink("empusers.txt");
+}
+system("wget https://empiredirectory.net/empusers.txt > /dev/null 2>\&1");
 
 my $d = new UI::Dialog ( backtitle => "Wolfpack Empire v$EMP_ver", height => 20, width => 65, listheight => 5,
 	order => [ 'ascii', 'cdialog', 'xdialog' ]);
@@ -73,7 +77,11 @@ sub DisplayLogo
 sub ShowOtherGames
 {
 	print "Available Games:\n";
-	#print "Game Name\t\t\tGame Connection\t\tWebsite\n";
+	if (-f "$OtherGamesFile")
+	{
+		unlink("$OtherGamesFile");
+	}
+	system("wget https://empiredirectory.net/$OtherGamesFile > /dev/null 2>\&1");
 	open(my $fh, '<:encoding(UTF-8)', $OtherGamesFile)
 		or die "Could not open file '$OtherGamesFile' $!";
 	while (my $row = <$fh>)
@@ -88,8 +96,6 @@ sub ShowOtherGames
 	close($fh);
 	print "----------\nTo get your server listed here contact us at $ContactUs\n";
 	print "Get a Empire server of your own for just \$7: $GameSubsLink\n";
-	print "--[ Press Enter To Continue ]--";
-	my $usrword = <STDIN>;
 }
 
 print $clear_screen;
@@ -112,13 +118,20 @@ while (-1)
 	{
 		print $clear_screen;
 		DisplayLogo();
-		open(my $fh, '<:encoding(UTF-8)', $file)
-			or die "Could not open file '$file' $!";
+		if (-f "empusers.txt")
+		{
+			unlink("empusers.txt");
+		}
+		system("wget \"$SanctFile\" > /dev/null 2>\&1");
+
+		open(my $fh, '<:encoding(UTF-8)', "empusers.txt")
+			or die "Could not open file '$SanctFile' $!";
 		while (my $row = <$fh>)
 		{
 			chomp $row;
 			print "$row\n";
 		}
+		close($fh);
 		print "--[ Press Enter To Continue ]--";
 		my $usrword = <STDIN>;
 	}
@@ -138,8 +151,8 @@ while (-1)
 	{
 		print $clear_screen;
 		DisplayLogo();
-		open(my $fh, '<:encoding(UTF-8)', $file)
-			or die "Could not open file '$file' $!";
+		open(my $fh, '<:encoding(UTF-8)', $FeverFile)
+			or die "Could not open file '$FeverFile' $!";
 		while (my $row = <$fh>)
 		{
 			chomp $row;
@@ -158,6 +171,8 @@ while (-1)
 	{
 		print $clear_screen;
 		ShowOtherGames();
+		print "--[ Press Enter To Continue ]--";
+		my $usrword = <STDIN>;
 	}
 }
 
